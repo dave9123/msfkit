@@ -25,9 +25,9 @@ git clone https://github.com/K1M4K-ID/msfkit
 
 cd msfkit
 
-chmod +x msfkit
+chmod +x msfkimak
 
-sh msfkit
+sh msfkimak
 
 =============================
 
