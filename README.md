@@ -13,6 +13,8 @@ Work Di Versi 0.92 => untuk install metasploit.
 
 Versi Dibawah Nya Work Untuk Pembuatan Backdoor Dll
 
+=================================================
+
 Cara Install msfkit
 
 apt update && apt upgrade -y
@@ -27,6 +29,7 @@ chmod +x msfkit
 
 sh msfkit
 
+=================================================
 
 Untuk Beda Jaringan Gunakan Portmap.io
 
