@@ -5,8 +5,10 @@ MSFKIT adalah tools otomatis
 untuk mengisntall metasploit,
 Membuat backdoor dan menjalankan metasploit 
 secara otomatis
+
 Note : Install Metasploit Berfungsi Untuk Android 7-9
 Gunakan Termux Versi Terbaru Agar Tidak Error.
+
 Work Di Versi 0.92 => untuk install metasploit.
 
 Versi Dibawah Nya Work Untuk Pembuatan Backdoor Dll
