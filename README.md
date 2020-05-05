@@ -31,7 +31,8 @@ sh msfkit
 
 =============================
 
-Untuk Beda Jaringan Gunakan Portmap.io
+Untuk Jarak Jauh Arau Beda Jaringan 
+Gunakan Portmap.io
 
 Agar Work Sign Lagi Dengan Apk Signer.Bisa Di Dapatkan
 Di Playstore Secara Gratis.
