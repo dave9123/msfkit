@@ -43,5 +43,5 @@ Contact : 08551664811
 
 Youtube : fadillah ramadhan
 
-![wa](https://user-images.githubusercontent.com/46388169/82024674-56a5a080-96ba-11ea-8e8a-0e047890e7df.jpeg)
 
+![20200523_205343](https://user-images.githubusercontent.com/46388169/82732470-9b26e100-9d37-11ea-86bb-7c460e37b1c7.jpg)
