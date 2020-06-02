@@ -34,7 +34,8 @@ if [ $pi = "1" ];
 then
 clear
 apt update && apt upgrade -y
-apt install git nano curl python python2 php ruby toilet figlet openssh f -y
+apt install git nano curl python python2 php ruby toilet figlet openssh -y
+apt install -f -y
 mkdir Malware
 dpkg -i apktool.deb
 echo
