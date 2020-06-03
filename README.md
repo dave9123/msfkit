@@ -9,7 +9,7 @@ secara otomatis
 Note : Install Metasploit Berfungsi Untuk Android 7-9
 Gunakan Termux Versi Terbaru Agar Tidak Error.
 
-Work Di Versi 0.92 => untuk install metasploit.
+Work Di Versi 0.94 (versi terbaru) => untuk install metasploit.
 
 Versi Dibawah Nya Work Untuk Pembuatan Backdoor Dll
 
@@ -25,7 +25,7 @@ git clone https://github.com/K1M4K-ID/msfkit
 
 cd msfkit
 
-chmod + x msfkit.sh
+chmod +x msfkit.sh
 
 sh msfkit.sh
 
