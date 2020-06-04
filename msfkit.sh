@@ -10,8 +10,6 @@ ku='\033[33;1m' #kuning
 
 clear
 
-termux-setup-storage
-
 
 echo $ku
 figlet MSF-KIT
@@ -33,6 +31,7 @@ read -p "masukan pilihan : " pi
 if [ $pi = "1" ];
 then
 clear
+termux-setup-storage
 apt update && apt upgrade -y
 apt install git nano curl python python2 php ruby toilet figlet openssh -y
 apt install -f -y
