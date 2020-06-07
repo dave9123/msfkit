@@ -1,5 +1,10 @@
 #!/bin/bash
 #variable warna
+#gunakan script ini dengan bijak
+#created by K1M4K-ID
+#github : https://github.com/K1M4K-ID
+#thanks to : E99 & Gafar Rizky
+#terimakasih
 
 me="\033[31;1m"
 hi="\033[32;1m"
@@ -371,7 +376,7 @@ sleep 1
 echo
 echo
 echo
-echo "setiap ip berbeda beda, sesuaikan ip anda"
+echo "     setiap ip berbeda beda, sesuaikan ip anda      "
 echo "----------------------------------------------------"
 echo $hi
 read -p "masukan configs atau ip lokal : " l
@@ -727,7 +732,7 @@ ipori
 echo $me
 clear
 mallware
-echo "wait for 35 minutes"
+echo "                   wait for 35 minutes              "
 echo $cy
 cd && cd msfkit && cd Payload
 mv -f SiMontok.apk ../Malware && cd && cd msfkit && cd Malware
@@ -764,7 +769,7 @@ ipori
 echo $bi
 clear
 mallware
-echo $hi"[+] wait for 35 minutes"
+echo $hi"                 wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f spyphone.apk ../Malware && cd && cd msfkit && cd Malware
@@ -1052,8 +1057,3 @@ fi
 fungsi
 
 
-#gunakan script ini dengan bijak
-#created by K1M4K-ID
-#github : https://github.com/K1M4K-ID
-#thanks to : E99 & Gafar Rizky
-#terimakasih
