@@ -1130,7 +1130,7 @@ vdmt
 elif [ $pi = "9" ];
 then
 clear
-uc
+ucc
 
 elif [ $pi = "10" ];
 then
