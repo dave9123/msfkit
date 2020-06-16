@@ -204,7 +204,7 @@ iport(){
 echo $ku
 clear
 mallware
-echo $me"                 Satu Jaringan                     "
+echo $me"                  Satu Jaringan                     "
 echo
 echo $ku"gunakan ip data seluler / wlan0, swlan0"
 sleep 2
@@ -276,7 +276,7 @@ ipsc(){
 echo $bi
 clear
 mallware
-echo $me"                 Satu Jaringan                     "
+echo $me"                  Satu Jaringan                     "
 echo
 echo $ku"gunakan ip data seluler / wlan0, swlan0"
 sleep 2
@@ -348,7 +348,7 @@ ipori(){
 echo $me
 clear
 mallware
-echo $me"                 Satu Jaringan                     "
+echo $me"                  Satu Jaringan                     "
 echo
 echo $ku"gunakan ip data seluler / wlan0, swlan0"
 sleep 2
