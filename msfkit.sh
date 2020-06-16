@@ -238,7 +238,7 @@ echo $cy"             K1M4K-23035.portmap.io            "
 sleep 1
 echo
 echo
-echo $bi"     setiap ip berbeda beda, sesuaikan ip anda"
+echo $bi"    setiap ip berbeda beda, sesuaikan ip anda"
 echo "----------------------------------------------------";
 echo $hi
 read -p "masukan configs/ip lokal : " l
