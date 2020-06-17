@@ -3,6 +3,5 @@
 
 MSFKIT adalah tools otomatis untuk exploit
 
-![Screenshot_20200617-203235_Termux](https://user-images.githubusercontent.com/46388169/84922333-e5f60780-b0ef-11ea-813f-ddc1fde64b2e.jpg)
-
+![20200617_230908](https://user-images.githubusercontent.com/46388169/84922476-19389680-b0f0-11ea-9e23-259efaabefd4.jpg)
 
