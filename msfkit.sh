@@ -502,7 +502,7 @@ echo "----------------------------------------------------";
 echo
 echo $cy"       port backdoor satu jaringan =>$me 4444"
 echo
-echo $cy"      K1M4K-23035.portmap.io:$me 23035$cy => 8888"
+echo $cy"      K1M4K-23035.portmap.io: 23035 =>$me 8888"
 echo $me
 echo "----------------------------------------------------";
 echo $hi
@@ -582,7 +582,7 @@ echo "----------------------------------------------------";
 echo
 echo $cy"       port backdoor satu jaringan =>$me 4444"
 echo
-echo $cy"      K1M4K-23035.portmap.io:$me 23035$cy => 8888"
+echo $cy"      K1M4K-23035.portmap.io: 23035 =>$me 8888"
 echo $me
 echo "----------------------------------------------------";
 echo $hi
@@ -662,7 +662,7 @@ echo "----------------------------------------------------";
 echo
 echo $cy"       port backdoor satu jaringan =>$me 4444"
 echo
-echo $cy"      K1M4K-23035.portmap.io:$me 23035$cy => 8888"
+echo $cy"      K1M4K-23035.portmap.io: 23035 =>$me 8888"
 echo $me
 echo "----------------------------------------------------";
 echo $hi
