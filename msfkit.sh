@@ -5,6 +5,7 @@
 #github : https://github.com/K1M4K-ID
 #thanks to : E99 & Gafar Rizky
 #terimakasih
+#recode tidak akan membuat mu bisa menjadi seorang programer
 
 me="\033[31;1m"
 hi="\033[32;1m"
