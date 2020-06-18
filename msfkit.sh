@@ -474,7 +474,7 @@ echo $hi"[+]$pu ip lokal untuk satu jaringan (wifi)"
 sleep 3
 echo $me"----------------------------------------------------";
 echo
-echo $hi"[+]$pu port 4444/8888 backdoor satu jaringan"
+echo $hi"[+]$pu port 4444/8888 backdoor satu jaringan$me"
 sleep 3
 clear
 banner
@@ -556,7 +556,7 @@ echo $hi"[+]$pu ip lokal untuk satu jaringan (wifi)"
 sleep 3
 echo $me"----------------------------------------------------";
 echo
-echo $hi"[+]$pu port 4444/8888 samakan dengan backdoor satu jaringan"
+echo $hi"[+]$pu port 4444/8888 backdoor satu jaringan$bi"
 sleep 3
 clear
 banner
@@ -640,7 +640,7 @@ echo $hi"[+]$pu ip lokal untuk satu jaringan (wifi)"
 sleep 3
 echo $me"----------------------------------------------------";
 echo
-echo $hi"[+]$pu port 4444/8888 samakan dengan backdoor satu jaringan"
+echo $hi"[+]$pu port 4444/8888 backdoor satu jaringan$cy"
 sleep 3
 clear
 banner
