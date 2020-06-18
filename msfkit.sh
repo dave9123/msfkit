@@ -775,7 +775,7 @@ sleep 7
 _pill
 }
 
-g45(){
+ghck(){
 clear
 mallware
 echo $hi"                 wait for 35 minutes            "
@@ -1206,7 +1206,7 @@ dsn
 elif [ $pi = "13" ];
 then
 clear
-g45
+ghck
 
 elif [ $pi = "0" ];
 then
