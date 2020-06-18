@@ -544,7 +544,7 @@ echo $bi
 clear
 banner
 echo
-echo $hi"[+]$pu gunakan ip tune0 untuk jarak jauh atau beda jaringan"
+echo $hi"[+]$pu ip tune0 untuk jarak jauh atau beda jaringan"
 sleep 3
 echo $me"----------------------------------------------------";
 echo
@@ -628,7 +628,7 @@ echo $cy
 clear
 banner
 echo
-echo $hi"[+]$pu gunakan ip tune0 untuk jarak jauh atau beda jaringan"
+echo $hi"[+]$pu ip tune0 untuk jarak jauh atau beda jaringan"
 sleep 3
 echo $me"----------------------------------------------------";
 echo
