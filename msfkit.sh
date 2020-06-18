@@ -780,7 +780,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                wait for 35 minutes             ";
 echo
 cd && cd msfkit && cd Payload
 mv -f G45_Hacking.apk ../Malware && cd && cd msfkit && cd Malware
