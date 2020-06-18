@@ -461,6 +461,7 @@ ekseapk(){
 echo $me
 clear
 banner
+echo
 echo $hi"[+]$pu ip tun0 untuk jarak jauh/beda jaringan"
 sleep 3
 echo $me"----------------------------------------------------";
@@ -539,6 +540,7 @@ eksepy(){
 echo $bi
 clear
 banner
+echo
 echo $hi"[+]$pu gunakan ip tune0 untuk jarak jauh atau beda jaringan"
 sleep 3
 echo $me"----------------------------------------------------";
@@ -619,6 +621,7 @@ eksephp(){
 echo $cy
 clear
 banner
+echo
 echo $hi"[+]$pu gunakan ip tune0 untuk jarak jauh atau beda jaringan"
 sleep 3
 echo $me"----------------------------------------------------";
