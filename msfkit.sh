@@ -465,12 +465,15 @@ echo
 echo $hi"[+]$pu ip tun0 untuk jarak jauh/beda jaringan"
 sleep 3
 echo $me"----------------------------------------------------";
+echo
 echo $hi"[+]$pu gunakan port dari portmap.io jarak jauh"
 sleep 3
 echo $me"----------------------------------------------------";
+echo
 echo $hi"[+]$pu ip lokal untuk satu jaringan (wifi)"
 sleep 3
 echo $me"----------------------------------------------------";
+echo
 echo $hi"[+]$pu port 4444/8888 backdoor satu jaringan"
 sleep 3
 clear
@@ -544,12 +547,15 @@ echo
 echo $hi"[+]$pu gunakan ip tune0 untuk jarak jauh atau beda jaringan"
 sleep 3
 echo $me"----------------------------------------------------";
+echo
 echo $hi"[+]$pu gunakan port dari portmap.io untuk jarak jauh"
 sleep 3
 echo $me"----------------------------------------------------";
+echo
 echo $hi"[+]$pu ip lokal untuk satu jaringan (wifi)"
 sleep 3
 echo $me"----------------------------------------------------";
+echo
 echo $hi"[+]$pu port 4444/8888 samakan dengan backdoor satu jaringan"
 sleep 3
 clear
@@ -625,12 +631,15 @@ echo
 echo $hi"[+]$pu gunakan ip tune0 untuk jarak jauh atau beda jaringan"
 sleep 3
 echo $me"----------------------------------------------------";
+echo
 echo $hi"[+]$pu gunakan port dari portmap.io untuk jarak jauh"
 sleep 3
 echo $me"----------------------------------------------------";
+echo
 echo $hi"[+]$pu ip lokal untuk satu jaringan (wifi)"
 sleep 3
 echo $me"----------------------------------------------------";
+echo
 echo $hi"[+]$pu port 4444/8888 samakan dengan backdoor satu jaringan"
 sleep 3
 clear
