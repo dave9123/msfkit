@@ -776,6 +776,8 @@ _pill
 }
 
 ghck(){
+ipori
+echo $me
 clear
 mallware
 echo $hi"                 wait for 35 minutes            "
