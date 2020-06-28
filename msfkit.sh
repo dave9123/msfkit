@@ -87,7 +87,7 @@ echo
 termux-setup-storage
 mkdir Malware
 apt update && apt upgrade -y
-apt install git nano curl python python2 php ruby toilet figlet openssh clang -y
+apt install git nano curl python python2 php ruby toilet figlet debianutils openssh clang -y
 apt install -f -y
 gem install lolcat
 dpkg -i apktool.deb
