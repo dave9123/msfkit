@@ -1,8 +1,10 @@
 #!/bin/bash
 # created by K1M4K-ID
-# sertakan nama author jika ingin merecode kambing!!
+# sertakan nama author jika ingin merecode, ethical hacking!!
 # tools multi function
+# msfkit is a framework that creates & generates & embeds apk payloads to penetrate android platform
 # update terbaru tools msfkit, open source
+# terima kasih.
 
 # config, jangan di ubah
 fixjava=$(_SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"' > /dev/null 2>&1)
@@ -273,7 +275,7 @@ function metasploit(){
     baner
     echo
     echo
-	    printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m create payload android\033[31;1m\n"
+	printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m create payload android\033[31;1m\n"
         sleep 0.025
         printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m create listerner\033[31;1m\n"
         sleep 0.025
@@ -451,34 +453,31 @@ function osintinstagram(){
     echo
         if [ $xyz = "1"  ];
         then
-        read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m press\033[31;1m enter \033[37;1mto setup osint"'\033[34;1m')" xyz
-            if [ -f $path/.data/Osint/config/.js/get.py ]; then
-            printf '\033[31;1m'
-            spiner
-            echo
-            printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mmencari janda please wait . . .\033[31;1m [\033[32;1mOK\033[31;1m]\n"
-            spiner
-            echo
-            sleep 2
-            clear
 
-            else
-            printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m janda \033[31;1mengga ada\033[37;1m, janda tidak ditemukan!\n"
-            cd $path/.data/Osint/config/.js > /dev/null
-            wget https://raw.githubusercontent.com/K1M4K-ID/ff-antena/master/.m/get.py > /dev/null 2>&1
-            printf '\033[31;1m'
-            spiner
-            echo
+                if [[ -d $path/.data/Osint ]]; then
+                printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mOsint already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+                spiner
+                echo
+                sleep 2
+                clear
+                else
+                printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m Osint \033[31;1mnot found\033[37;1m, installing Osint!\n"
+                cd $path/.data > /dev/null
+                git clone https://github.com/Datalux/Osintgram > /dev/null 2>&1;mv -f Osintgram Osint > /dev/null 2>&1
+                printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+                printf '\033[31;1m'
+                spiner
+                echo
+                        
+                fi
 
-            fi
-
-        cd $path/.data/Osint && make setup && cd $path/.data/Osint/config;cp credentials.ini .js >> /dev/null 2>&1 && python3 $path/.data/Osint/config/.js/get.py && cd $path/.data/Osint && pip3 install -r requirements.txt
+        cd $path/.data/Osint && make setup && cd $path/.data/Osint && pip3 install -r requirements.txt
         osintinstagram
         sleep 2
 
         elif [ $xyz = "2"  ];
         then
-        printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m example >> temanku_\n"
+        printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m example >> contoh_\n"
         printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m\n"
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m target : "'\033[34;1m')" target
         cd $path/.data/Osint && python3 main.py $target 
