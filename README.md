@@ -26,3 +26,5 @@
   
 </h2>
 
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=K1M4K-ID)](https://github.com/anuraghazra/github-readme-stats)
