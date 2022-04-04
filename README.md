@@ -25,7 +25,7 @@ Msfkit sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sni
 <b>Don't Be Evil!!</b> <i>Author tidak akan bertanggung jawab atas, perbuatan yang kalian lakukan!!</i>
 ***
  
-# SCREENSHOOT:
+# Screenshot:
 
 
 ![20220404_071234](https://user-images.githubusercontent.com/46388169/161455347-4d120f02-c18a-4b5f-96aa-cf369512dbce.jpg)
@@ -33,7 +33,7 @@ Msfkit sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sni
 
 
 
-## FEATURE : 
+## Features : 
 ```  
 1.) Information Gathering                    > tools mencari informasi
 2.) Exploit Attack Metasploit                > tools exploit, dengan metasploit-framework { create payload, embed payload, listerner }
@@ -42,6 +42,11 @@ Msfkit sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sni
 5.) Sniffing & MITM ATTACK {SOON}            > tools penyadapan dan serangan ManInTheMidle Attack
 6.) Social Enggineering {SOON}               > tools rekayasa sosial  
 ```
-
+## Instalation
+```
+- git clone https://github.com/K1M4K-ID/msfkit
+- cd msfkit && chmod +x msfkit.sh
+- ./msfkit.sh OR bash msfkit.sh
+```
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=K1M4K-ID)](https://github.com/anuraghazra/github-readme-stats)
