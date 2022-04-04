@@ -35,12 +35,12 @@ Don't Be Evil!! <b>Author tidak akan bertanggung jawab atas, perbuatan yang kali
 
 ## FEATURE : 
 ```  
-1.) Information Gathering 
-2.) Exploit Attack Metasploit
-3.) Web Attack, XSS & SQL Injection {SOON}
-4.) Wireless Attack {SOON}
-5.) Sniffing & MITM ATTACK {SOON}
-6.) Social Enggineering {SOON}  
+1.) Information Gathering                    > tools mencari informasi
+2.) Exploit Attack Metasploit                > tools exploit, dengan metasploit-framework { create payload, embed payload, listerner }
+3.) Web Attack, XSS & SQL Injection {SOON}   > tools web attack, Xss dan sql injection
+4.) Wireless Attack {SOON}                   > tools wifi attack, Fluxion dan Airgeddon
+5.) Sniffing & MITM ATTACK {SOON}            > tools penyadapan dan serangan ManInTheMidle Attack
+6.) Social Enggineering {SOON}               > tools rekayasa sosial  
 ```
 
 
