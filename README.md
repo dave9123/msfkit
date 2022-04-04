@@ -1,7 +1,7 @@
 ## MSFKIT FRAMEWORK
-'''bash 
+"""bash 
 Author : K1M4K-ID Founder : { IPT - Invisible Protect Team }
-'''
+"""
 
 ## dependencies
 * 
