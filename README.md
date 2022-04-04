@@ -1,5 +1,5 @@
-<h1># MSF-KIT</h1>
-<h1># K1M4K-ID</h1>
+<h1># MSF-KIT
+# K1M4K-ID</h1>
 
 
 
@@ -7,15 +7,21 @@
 
 
 <p>
-<h3>MSFKIT adalah sebuah tools yang di bangun, untuk melakukan sebuah PENTEST, Exploit, SNiffing, Information Gathering & Social ENGINEERING</h3>
+  <b>MSFKIT</b> <i>adalah sebuah tools yang di bangun, untuk melakukan sebuah PENTEST, Exploit, SNiffing, Information Gathering & Social ENGINEERING</i>
 </p>
 
 <h2>FEATURE : 
 1.) Information Gathering
+  
 2.) Exploit Attack Metasploit
+  
 3.) Web Attack, XSS & SQL Injection {SOON}
+  
 4.) Wireless Attack {SOON}
+  
 5.) Sniffing & MITM ATTACK {SOON}
+  
 6.) Social Enggineering {SOON}  
+  
 </h2>
 
