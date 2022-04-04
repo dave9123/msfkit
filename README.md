@@ -42,7 +42,7 @@ Msfkit sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sni
 5.) Sniffing & MITM ATTACK {SOON}            > tools penyadapan dan serangan ManInTheMidle Attack
 6.) Social Enggineering {SOON}               > tools rekayasa sosial  
 ```
-## Instalation Kali Linux, Parrot Os, Nethunter, Ubuntu (Dicoba Aja)
+## Instalation For Kali Linux, Parrot Os, Nethunter, Ubuntu (Dicoba Aja)
 ```
 * cloning tools
 - git clone https://github.com/K1M4K-ID/msfkit
