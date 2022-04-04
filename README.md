@@ -35,16 +35,11 @@ Don't Be Evil!!
 
 ## FEATURE : 
 ```  
-1.) Information Gathering
-  
+1.) Information Gathering 
 2.) Exploit Attack Metasploit
-  
 3.) Web Attack, XSS & SQL Injection {SOON}
-  
 4.) Wireless Attack {SOON}
-  
 5.) Sniffing & MITM ATTACK {SOON}
-  
 6.) Social Enggineering {SOON}  
 ```
 
