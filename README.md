@@ -1,17 +1,19 @@
 ## MSFKIT FRAMEWORK
 ```
-  Author : K1M4K-ID Founder : { IPT - Invisible Protect Team }
+Author : K1M4K-ID Founder : { IPT - Invisible Protect Team }
 ```
 
 
 
 ## Dependencies
+```
 * metasploit-framework
 * xterm
 * Zenity
 * Aapt
 * Apktool
 * Zipalign
+```
 
 ## Description
  ***
