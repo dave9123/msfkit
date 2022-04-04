@@ -1,10 +1,9 @@
 ## MSFKIT FRAMEWORK
-```bash
-  npm run deploy
+```
+  Author : K1M4K-ID Founder : { IPT - Invisible Protect Team }
 ```
 
 
-Author : K1M4K-ID Founder : { IPT - Invisible Protect Team }
 
 ## Dependencies
 * metasploit-framework
