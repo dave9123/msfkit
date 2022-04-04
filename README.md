@@ -16,6 +16,9 @@ Author : K1M4K-ID Founder : { IPT - Invisible Protect Team }
 <b>Msfkit</b> sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sniffing, information gathering & social enggineering
  ***
  
+## Disclaimer
+*** Don't Be Evil!! ***
+ 
 # SCREENSHOOT:
 
 
