@@ -44,8 +44,13 @@ Msfkit sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sni
 ```
 ## Instalation
 ```
+* cloning tools
 - git clone https://github.com/K1M4K-ID/msfkit
+
+* masuk directory dan set permission
 - cd msfkit && chmod +x msfkit.sh
+
+* jalankan tools
 - ./msfkit.sh OR bash msfkit.sh
 ```
 
