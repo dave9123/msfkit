@@ -17,7 +17,9 @@ Author : K1M4K-ID Founder : { IPT - Invisible Protect Team }
  ***
  
 ## Disclaimer
-*** Don't Be Evil!! ***
+*** 
+Don't Be Evil!! 
+***
  
 # SCREENSHOOT:
 
