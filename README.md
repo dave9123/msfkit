@@ -54,7 +54,7 @@ Msfkit sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sni
 - ./msfkit.sh OR bash msfkit.sh
 ```
 
-## Installtion Android
+## Instalation Android
 ```
 Comming Soon
 ```
