@@ -2063,7 +2063,7 @@ function xss(){
     sleep 0.025
     printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
     sleep 0.025
-		echo
+    echo
     read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
     sleep 0.025
     printf '\033[31;1m'
@@ -2082,7 +2082,7 @@ function xss(){
                 printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m xss \033[31;1mnot found\033[37;1m, installing xss!\n"
                 cd $path/.data > /dev/null
                 git clone https://github.com/K1M4K-ID/xss > /dev/null 2>&1
-								sleep 0.025
+		sleep 0.025
                 printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
                 printf '\033[31;1m'
                 spiner
@@ -2114,8 +2114,8 @@ function xss(){
 
 					fi
         printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
-				sleep 2
-				clear
+	sleep 2
+	clear
         cd $path/.data/xss;python3 payloader.py
         sleep 3
         xss
