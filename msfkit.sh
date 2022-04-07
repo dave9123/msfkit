@@ -131,6 +131,14 @@ if [ -f /usr/bin/zenity ]; then
     fi
     sleep 0.025
 
+if [ -f /usr/bin/python3 ]; then
+	  printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m python is already exists!\n"
+	  else
+	  printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing python3!\n"
+	  apt-get install python3-pip
+	  fi
+	  sleep 0.025
+
 if [ -f /usr/local/bin/apktool ]; then
     printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m apktool is already exists!\n"
     else
@@ -185,6 +193,25 @@ if [ -f /usr/bin/jarsigner ]; then
     fi
     sleep 0.025
 
+# kali linux 2022.1 fix unable to locacate
+# alternative error scrcpy, unable to locate, hapus komentar dan kasih komentar di scrcpy yang bawah wkwk
+#if [ -f /snap/bin/scrcpy ]; then
+#    printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
+#    else
+#    printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
+#		sudo apt update -y
+#		sudo apt install snapd -y
+#		sudo snap install core -y
+#		sudo systemctl unmask snapd -y
+#		sudo systemctl enable --now snapd -y
+#		sudo snap install scrcpy -y
+#		echo "alias scrcpy='/snap/bin/scrcpy'" >> ~/.zshrc
+#
+#  fi
+#  sleep 0.025
+
+
+# kalo ini bisa, gpp biarin aja
 if [ -f /usr/bin/scrcpy ]; then
     printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
     else
