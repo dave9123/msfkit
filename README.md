@@ -50,6 +50,9 @@ Msfkit sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sni
 * masuk directory dan set permission
 - cd msfkit && chmod +x msfkit.sh
 
+* install requirement for osint
+- pip3 install -r requirements.txt
+
 * jalankan tools
 - ./msfkit.sh OR bash msfkit.sh
 ```
