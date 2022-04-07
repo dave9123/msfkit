@@ -194,31 +194,38 @@ if [ -f /usr/bin/jarsigner ]; then
     sleep 0.025
 
 # kali linux 2022.1 fix unable to locacate
-# alternative error scrcpy, unable to locate, hapus komentar dan kasih komentar di scrcpy yang bawah wkwk
-#if [ -f /snap/bin/scrcpy ]; then
-#    printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
-#    else
-#    printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
-#		sudo apt update -y
-#		sudo apt install snapd -y
-#		sudo snap install core -y
-#		sudo systemctl unmask snapd -y
-#		sudo systemctl enable --now snapd -y
-#		sudo snap install scrcpy -y
-#		echo "alias scrcpy='/snap/bin/scrcpy'" >> ~/.zshrc
-#
-#  fi
-#  sleep 0.025
-
-
-# kalo ini bisa, gpp biarin aja
-if [ -f /usr/bin/scrcpy ]; then
+# alternative error scrcpy, unable to locate
+if [ -f /snap/bin/scrcpy ]; then
     printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
     else
     printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
-    apt-get install scrcpy -y
+		sudo apt update -y
+		sudo apt install snapd -y
+		sudo snap install core -y
+		sudo systemctl unmask snapd -y
+		sudo systemctl enable --now snapd -y
+		sudo snap install scrcpy -y
+		echo "alias scrcpy='/snap/bin/scrcpy'" >> ~/.zshrc
+
     fi
     sleep 0.025
+
+if [ -d $path/data/out ]; then
+			printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m path is already exists!\n"
+			else
+			printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m setup path & directory!\n"
+			mkdir -p data/out
+
+fi
+
+#
+#if [ -f /usr/bin/scrcpy ]; then
+#    printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
+#    else
+#    printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
+#    apt-get install scrcpy -y
+#    fi
+#    sleep 0.025
 }
 
 # check metasploit framework dan instalasi secara otomatis
@@ -289,7 +296,7 @@ function information_gathering(){
         sleep 0.025
         printf "\033[31;1m[\033[32;1m8\033[31;1m]\033[37;1m search directory\n"
         sleep 0.025
-        printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m back to menu\n"
+        printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m kembali\n"
         sleep 0.025
         echo
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
@@ -297,7 +304,7 @@ function information_gathering(){
         echo
 }
 
-# menu user xyz 2
+# menu jika user xyz 2
 function metasploit(){
     clear
     baner
@@ -307,7 +314,7 @@ function metasploit(){
         sleep 0.025
         printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m create listerner\033[31;1m\n"
         sleep 0.025
-        printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m back to menu\033[31;1m\n\n"
+        printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m kembali\033[31;1m\n\n"
         sleep 0.025
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
         printf '\033[31;1m'
@@ -315,17 +322,15 @@ function metasploit(){
         echo
 }
 
-# user input 3
-function serangan_wifi(){
+# menu jika user xyz 3
+function web_attack(){
     clear
     baner
     echo
     echo
-        printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m fluxion  \033[31;1m(\033[32;1mHacking Wifi\033[31;1m)\n"
+        printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m sql-injection  \033[31;1m(\033[32;1mfor scanning,attack and get database\033[31;1m)\n"
         sleep 0.025
-        printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m airgedon \033[31;1m(\033[32;1mHacking Wifi\033[31;1m)\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m3\033[31;1m]\033[37;1m evillimiter \033[31;1m(\033[34;1mBlock Wifi\033[31;1m)\n"
+        printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m xss-scanning \033[31;1m(\033[32;1mfor scanning xss\033[31;1m)\n"
         sleep 0.025
         printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m back\033[31;1m\n\n"
         sleep 0.025
@@ -341,7 +346,7 @@ function sadap(){
         sleep 0.025
         printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m wireshark\033[31;1m\n"
         sleep 0.025
-        printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m back to menu\033[31;1m\n"
+        printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m kembali\033[31;1m\n"
         sleep 0.025
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
         sleep 0.025
@@ -375,7 +380,7 @@ function others(){
         sleep 0.025
         printf "\033[31;1m[\033[32;1m10\033[31;1m] \033[37;1msql injection\033[31;1m (\033[32;1mSQLI\033[31;1m)\n"
         sleep 0.025
-        printf "\033[31;1m[\033[32;1m00\033[31;1m] \033[37;1mback to menu\n"
+        printf "\033[31;1m[\033[32;1m00\033[31;1m] \033[37;1mkembali\n"
         sleep 0.025
         printf "\n"
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
@@ -422,7 +427,7 @@ function search(){
         spiner
         clear
         bash $path/.data/recon/userrecon.sh
-        mv *.txt ../data/out
+        mv *.txt data/out > /dev/null 2>&1
         printf '\033[31;1m'
         spiner
         echo
@@ -470,7 +475,7 @@ function osintinstagram(){
     sleep 0.025
     spiner
     echo
-    printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mback to menu\033[31;1m\n"
+    printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
     sleep 0.025
     spiner
     echo
@@ -952,7 +957,7 @@ function android(){
         sleep 0.025
         printf "\033[31;1m[\033[32;1m3\033[31;1m]\033[37;1m bind backdoor original dari file\033[31;1m [\033[32;1mBETA\033[31;1m]\n"
         sleep 0.025
-        printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m back to menu\n\n"
+        printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m kembali\n\n"
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
         sleep 0.025
         echo
@@ -1026,7 +1031,7 @@ printf "\033[31;1m[\033[32;1m11\033[31;1m]\033[37;1m indoxxi\033[31;1m\n"
 sleep 0.025
 printf "\033[31;1m[\033[32;1m12\033[31;1m]\033[37;1m picsart pro\033[31;1m\n"
 sleep 0.025
-printf "\033[31;1m[\033[32;1m00\033[31;1m]\033[37;1m back to menu\033[31;1m\n"
+printf "\033[31;1m[\033[32;1m00\033[31;1m]\033[37;1m kembali\033[31;1m\n"
 sleep 0.025
 printf "\033[31;1m[\033[32;1m**\033[31;1m]\n"
 sleep 0.025
@@ -1913,7 +1918,7 @@ function backdoor_file(){
 function listerners(){
     printf "\033[31;1m[\033[32;1m1\033[31;1m] \033[37;1mlisterner\033[32;1m android\033[31;1m\n"
     sleep 0.025
-    printf "\033[31;1m[\033[32;1mx\033[31;1m] \033[37;1mback to menu\033[31;1m\n\n"
+    printf "\033[31;1m[\033[32;1mx\033[31;1m] \033[37;1mkembali\033[31;1m\n\n"
     sleep 0.025
     read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
     sleep 0.025
@@ -1969,6 +1974,194 @@ function run_metasploit(){
                 fi
 }
 
+
+# web attack - sql injection
+function sqli(){
+    clear
+    baner
+    echo
+    printf "\033[31;1m[\033[32;1m1\033[31;1m] \033[37;1minstall sql-injection\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m2\033[31;1m] \033[37;1mrun sql-injection\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
+    sleep 0.025
+    echo
+    read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
+    sleep 0.025
+    printf '\033[31;1m'
+    spiner
+    echo
+        if [ $xyz = "1"  ];
+        then
+
+                if [[ -d $path/.data/sql-injection ]]; then
+                printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1msql-injection already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+                spiner
+                echo
+                sleep 2
+                clear
+                else
+                printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m sql-injection \033[31;1mnot found\033[37;1m, installing sql-injection!\n"
+                cd $path/.data > /dev/null
+                git clone https://github.com/K1M4K-ID/sql-injection > /dev/null 2>&1
+                printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+                printf '\033[31;1m'
+                spiner
+                echo
+
+                fi
+
+        cd $path/.data/sql-injection;bash sql-injection.sh
+        sqli
+        sleep 2
+
+        elif [ $xyz = "2"  ];
+        then
+					if [[ -d $path/.data/sql-injection ]]; then
+					printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1msql-injection already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+					spiner
+					echo
+					sleep 2
+					clear
+					else
+					printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m sql-injection \033[31;1mnot found\033[37;1m, installing sql-injection!\n"
+					cd $path/.data > /dev/null
+					git clone https://github.com/K1M4K-ID/sql-injection > /dev/null 2>&1
+					printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+					printf '\033[31;1m'
+					spiner
+					echo
+
+					fi
+        printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
+				sleep 2
+				clear
+        cd $path/.data/sql-injection;bash sql-injection.sh
+        sleep 3
+        sqli
+
+        elif [ $xyz = "0"  ];
+        then
+        run_lainya
+
+        else
+        printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m masukan input dengan benar\n"
+        sleep 2
+        sqli
+        fi
+}
+
+# web attack - xss
+function xss(){
+    clear
+    baner
+    echo
+    printf "\033[31;1m[\033[32;1m1\033[31;1m] \033[37;1minstall XSS\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m2\033[31;1m] \033[37;1mrun XSS\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
+    sleep 0.025
+		echo
+    read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
+    sleep 0.025
+    printf '\033[31;1m'
+    spiner
+    echo
+        if [ $xyz = "1"  ];
+        then
+
+                if [[ -d $path/.data/xss ]]; then
+                printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mxss already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+                spiner
+                echo
+                sleep 2
+                clear
+                else
+                printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m xss \033[31;1mnot found\033[37;1m, installing xss!\n"
+                cd $path/.data > /dev/null
+                git clone https://github.com/K1M4K-ID/xss > /dev/null 2>&1
+								sleep 0.025
+                printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+                printf '\033[31;1m'
+                spiner
+                echo
+
+                fi
+
+        cd $path/.data/xss;python3 payloader.py
+        xss
+        sleep 2
+
+        elif [ $xyz = "2"  ];
+        then
+					if [[ -d $path/.data/xss ]]; then
+					printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mxss already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+					spiner
+					echo
+					sleep 2
+					clear
+					else
+					printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m xss \033[31;1mnot found\033[37;1m, installing xss!\n"
+					cd $path/.data > /dev/null
+					git clone https://github.com/K1M4K-ID/xss > /dev/null 2>&1
+					sleep 0.025
+					printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+					printf '\033[31;1m'
+					spiner
+					echo
+
+					fi
+        printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
+				sleep 2
+				clear
+        cd $path/.data/xss;python3 payloader.py
+        sleep 3
+        xss
+
+        elif [ $xyz = "0"  ];
+        then
+        run_lainya
+
+        else
+        printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m masukan input dengan benar\n"
+        sleep 2
+        xss
+        fi
+}
+
+# fungsi untuk menjalankan menu untuk web attack
+function run_web_attack(){
+        clear
+        baner
+        echo
+        web_attack
+                if [ $xyz = "1"  ];
+                then
+                sqli
+                run_web_attack
+
+                elif [ $xyz = "2"  ];
+                then
+                xss
+                run_web_attack
+
+                elif [ $xyz = "0"  ];
+                then
+                runer
+
+                else
+                printf "\033[31;1m[\033[37;1m!\033[31;1m]\033[37;1m masukan input dengan benar . .\n"
+                sleep 2
+                run_web_attack
+
+                fi
+}
+
+
+
+
 function runer(){
     clear
     baner
@@ -1980,7 +2173,7 @@ function runer(){
         case $xyz in
             1) run_information;;
             2) run_metasploit;;
-            3) janda;sleep 3;runer;;
+            3) run_web_attack;;
             4) janda;sleep 3;runer;;
             5) janda;sleep 3;runer;;
             6) janda;sleep 3;runer;;
