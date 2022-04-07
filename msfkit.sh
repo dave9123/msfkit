@@ -195,20 +195,20 @@ if [ -f /usr/bin/jarsigner ]; then
 
 # kali linux 2022.1 fix unable to locacate
 # alternative error scrcpy, unable to locate
-if [ -f /snap/bin/scrcpy ]; then
-    printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
-    else
-    printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
-		sudo apt update -y
-		sudo apt install snapd -y
-		sudo snap install core -y
-		sudo systemctl unmask snapd -y
-		sudo systemctl enable --now snapd -y
-		sudo snap install scrcpy -y
-		echo "alias scrcpy='/snap/bin/scrcpy'" >> ~/.zshrc
-
-    fi
-    sleep 0.025
+#if [ -f /snap/bin/scrcpy ]; then
+#    printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
+#    else
+#    printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
+#		sudo apt update -y
+#		sudo apt install snapd -y
+#		sudo snap install core -y
+#		sudo systemctl unmask snapd -y
+#		sudo systemctl enable --now snapd -y
+#		sudo snap install scrcpy -y
+#		echo "alias scrcpy='/snap/bin/scrcpy'" >> ~/.zshrc
+#
+#   fi
+#   sleep 0.025
 
 if [ -d $path/data/out ]; then
 			printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m path is already exists!\n"
@@ -218,14 +218,14 @@ if [ -d $path/data/out ]; then
 
 fi
 
-#
-#if [ -f /usr/bin/scrcpy ]; then
-#    printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
-#    else
-#    printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
-#    apt-get install scrcpy -y
-#    fi
-#    sleep 0.025
+# kalo ga error, pake ini aja
+if [ -f /usr/bin/scrcpy ]; then
+    printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
+    else
+    printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
+    apt-get install scrcpy -y
+    fi
+    sleep 0.025
 }
 
 # check metasploit framework dan instalasi secara otomatis
