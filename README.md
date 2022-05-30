@@ -2,10 +2,6 @@
 ```
 Author : K1M4K-ID Founder { IPT - Invisible Protect Team }
 ```
-# tes
-```
-sssss
-```
 
 ## Dependencies
 ```
