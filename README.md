@@ -23,10 +23,15 @@ Msfkit sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sni
 <b>Don't Be Evil!!</b> <i>Author tidak akan bertanggung jawab atas, perbuatan yang kalian lakukan!!</i>
 ***
  
-# Screenshot:
-
+# Screenshot Menu:
 
 ![20220404_071234](https://user-images.githubusercontent.com/46388169/161455347-4d120f02-c18a-4b5f-96aa-cf369512dbce.jpg)
+
+# Screenshoot Informatio-Gathering
+
+![information](https://user-images.githubusercontent.com/46388169/172133777-c77a84d9-dc6d-4168-b12f-9334243ad20f.jpg)
+
+
 
 
 
