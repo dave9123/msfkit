@@ -2443,7 +2443,38 @@ function evillimiters(){
         fi
 }
 
+# fungsi untuk menjalankan menu untuk wifi attack
+function run_wifi_attack(){
+        clear
+        baner
+        echo
+        sadap
+                if [ $xyz = "1"  ];
+                then
+                fluxion
+                run_wifi_attack
 
+                elif [ $xyz = "2"  ];
+                then
+                wifi-agent
+                run_wifi_attack
+
+								elif [ $xyz = "3"  ];
+								then
+								evillimiters
+								run_wifi_attack
+
+								elif [ $xyz = "0"  ];
+								then
+								runer
+
+                else
+                printf "\033[31;1m[\033[37;1m!\033[31;1m]\033[37;1m masukan input dengan benar . .\n"
+                sleep 2
+                run_wifi_attack
+
+                fi
+}
 
 
 # bettercap for sniffing
@@ -2484,7 +2515,7 @@ function better(){
                 fi
 
 				sleep 3
-				wifi-agent
+				better
 
         elif [ $xyz = "2"  ];
         then
@@ -2627,7 +2658,7 @@ function run_mitm_attack(){
                 else
                 printf "\033[31;1m[\033[37;1m!\033[31;1m]\033[37;1m masukan input dengan benar . .\n"
                 sleep 2
-                run_wifi_attack
+                run_mitm_attack
 
                 fi
 }
