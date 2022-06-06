@@ -195,20 +195,21 @@ if [ -f /usr/bin/jarsigner ]; then
 
 # kali linux 2022.1 fix unable to locacate
 # alternative error scrcpy, unable to locate
-#if [ -f /snap/bin/scrcpy ]; then
-#    printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
-#    else
-#    printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
-#		sudo apt update -y
-#		sudo apt install snapd -y
-#		sudo snap install core -y
-#		sudo systemctl unmask snapd -y
-#		sudo systemctl enable --now snapd -y
-#		sudo snap install scrcpy -y
-#		echo "alias scrcpy='/snap/bin/scrcpy'" >> ~/.zshrc
-#
-#   fi
-#   sleep 0.025
+if [ -f /usr/bin/scrcpy ]; then
+    printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
+    else
+    printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
+		#sudo apt update -y
+		sudo apt-get install scrcpy -y
+		#sudo apt install snapd -y
+		#sudo snap install core -y
+		#sudo systemctl unmask snapd -y
+		#sudo systemctl enable --now snapd -y
+		#sudo snap install scrcpy -y
+		#echo "alias scrcpy='/snap/bin/scrcpy'" >> ~/.zshrc
+
+    fi
+    sleep 0.025
 
 if [ -d $path/data/out ]; then
 			printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m path is already exists!\n"
@@ -218,14 +219,14 @@ if [ -d $path/data/out ]; then
 
 fi
 
-# kalo ga error, pake ini aja
-if [ -f /usr/bin/scrcpy ]; then
-    printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
-    else
-    printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
-    apt-get install scrcpy -y
-    fi
-    sleep 0.025
+#
+#if [ -f /usr/bin/scrcpy ]; then
+#    printf "\033[31;1m[\033[32;1mOK\033[31;1m]\033[37;1m scrcpy is already exists!\n"
+#    else
+#    printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m installing scrcpy!\n"
+#    apt-get install scrcpy -y
+#    fi
+#    sleep 0.025
 }
 
 # check metasploit framework dan instalasi secara otomatis
@@ -342,17 +343,33 @@ function web_attack(){
 
 # user input 4 sniffing & MITM
 function sadap(){
-        printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m bettercap\033[31;1m\n"
+        printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m fluxion (hacking wifi with captive portal - fake ssid)\033[31;1m\n"
         sleep 0.025
-        printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m wireshark\033[31;1m\n"
+        printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m wifi-agent (fake wifi - for hacking account sosial media)\033[31;1m\n"
         sleep 0.025
-        printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m kembali\033[31;1m\n"
+        printf "\033[31;1m[\033[32;1m3\033[31;1m]\033[37;1m evillimiter (hacking wifi - kill wifi)\033[31;1m\n"
+        sleep 0.025
+				printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m kembali\033[31;1m\n\n"
         sleep 0.025
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
         sleep 0.025
         printf '\033[31;1m'
 
 }
+
+# user input 5 MITM
+function mitm(){
+        printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m bettercap (sniffing networking)\033[31;1m\n"
+        sleep 0.025
+        printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m MitM proxy (sniffing - http/https)\033[31;1m\n"
+        sleep 0.025
+				printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m kembali\033[31;1m\n\n"
+        sleep 0.025
+        read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
+        sleep 0.025
+        printf '\033[31;1m'
+}
+
 
 # user pilih menu lainya
 function others(){
@@ -957,7 +974,7 @@ function android(){
         sleep 0.025
         printf "\033[31;1m[\033[32;1m3\033[31;1m]\033[37;1m Bind Backdoor original from file\033[31;1m [\033[32;1mBETA\033[31;1m]\n"
         sleep 0.025
-	printf "\033[31;1m[\033[32;1m4\033[31;1m]\033[37;1m Bind Backdoor + inject ransomware\033[31;1m [\033[32;1mBETA\033[31;1m]\n"
+				printf "\033[31;1m[\033[32;1m4\033[31;1m]\033[37;1m Bind Backdoor + inject ransomware\033[31;1m [\033[32;1mBETA\033[31;1m]\n"
         sleep 0.025
         printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m kembali\n\n"
         read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
@@ -975,9 +992,9 @@ function android(){
         	then
         	backdoor_file
 
-		elif [ $xyz = "4"  ];
-		then
-		backdoor_ransomware
+					elif [ $xyz = "4"  ];
+					then
+					backdoor_ransomware
 
 		elif [ $xyz = "0"  ];
 		then
@@ -1920,7 +1937,6 @@ function backdoor_file(){
         sleep 1
 }
 
-#fungsi backdoor + inject ransomware
 function backdoor_ransomware() {
 	#statements
 	clear
@@ -1945,7 +1961,6 @@ function backdoor_ransomware() {
 	clear_data
 	sleep 1
 }
-
 
 # listerner metasploit
 function listerners(){
@@ -2096,7 +2111,7 @@ function xss(){
     sleep 0.025
     printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
     sleep 0.025
-    echo
+		echo
     read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
     sleep 0.025
     printf '\033[31;1m'
@@ -2115,7 +2130,7 @@ function xss(){
                 printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m xss \033[31;1mnot found\033[37;1m, installing xss!\n"
                 cd $path/.data > /dev/null
                 git clone https://github.com/K1M4K-ID/xss > /dev/null 2>&1
-		sleep 0.025
+								sleep 0.025
                 printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
                 printf '\033[31;1m'
                 spiner
@@ -2147,8 +2162,8 @@ function xss(){
 
 					fi
         printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
-	sleep 2
-	clear
+				sleep 2
+				clear
         cd $path/.data/xss;python3 payloader.py
         sleep 3
         xss
@@ -2192,6 +2207,430 @@ function run_web_attack(){
                 fi
 }
 
+# wifi attack
+function fluxion(){
+    clear
+    baner
+    echo
+    printf "\033[31;1m[\033[32;1m1\033[31;1m] \033[37;1minstall fluxion - for hacking wifi\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m2\033[31;1m] \033[37;1mrun fluxion\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
+    sleep 0.025
+		echo
+    read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
+    sleep 0.025
+    printf '\033[31;1m'
+    spiner
+    echo
+        if [ $xyz = "1"  ];
+        then
+
+                if [[ -d $path/.data/fluxion ]]; then
+                printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mfluxion already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+                spiner
+                echo
+                sleep 2
+                clear
+                else
+                printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m fluxion \033[31;1mnot found\033[37;1m, installing fluxion!\n"
+                cd $path/.data > /dev/null
+                git clone https://github.com/K1M4K-ID/fluxion > /dev/null 2>&1
+								sleep 0.025
+                printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+                printf '\033[31;1m'
+                spiner
+                echo
+
+                fi
+
+        unzip fluxion.zip;rm -fr fluxion.zip;cd fluxion;cd install;chmod +x *;bash install.sh
+				sleep 3
+				fluxion
+
+        elif [ $xyz = "2"  ];
+        then
+					if [[ -d $path/.data/fluxion ]]; then
+					printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mfluxion already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+					spiner
+					echo
+					sleep 2
+					clear
+					else
+					printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m fluxion \033[31;1mnot found\033[37;1m, installing fluxion!\n"
+					cd $path/.data > /dev/null
+					git clone https://github.com/K1M4K-ID/fluxion > /dev/null 2>&1
+					unzip fluxion.zip;rm -fr fluxion.zip;cd fluxion;cd install;chmod +x *;bash install.sh
+					sleep 0.025
+					printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+					printf '\033[31;1m'
+					spiner
+					echo
+
+					fi
+        printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
+				sleep 2
+				clear
+				cd $path/.data/fluxion;bash fluxion.sh
+				sleep 3
+        fluxion
+
+        elif [ $xyz = "0"  ];
+        then
+        run_lainya
+
+        else
+        printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m masukan input dengan benar\n"
+        sleep 2
+        fluxion
+        fi
+}
+
+# wifi agent for hacking wifi with captive portal
+function wifi-agent(){
+    clear
+    baner
+    echo
+    printf "\033[31;1m[\033[32;1m1\033[31;1m] \033[37;1minstall wifi-agent - for hacking account\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m2\033[31;1m] \033[37;1mrun wifi-agent\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
+    sleep 0.025
+		echo
+    read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
+    sleep 0.025
+    printf '\033[31;1m'
+    spiner
+    echo
+        if [ $xyz = "1"  ];
+        then
+
+                if [[ -d $path/.data/wifi-agent ]]; then
+                printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mwifi-agent already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+                spiner
+                echo
+                sleep 2
+                clear
+                else
+                printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m wifi-agent \033[31;1mnot found\033[37;1m, installing wifi-agent!\n"
+                cd $path/.data > /dev/null
+								git clone https://github.com/makdosx/wifi-agent;chmod -R 777 wifi-agent > /dev/null 2>&1
+								sleep 0.025
+                printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+                printf '\033[31;1m'
+                spiner
+                echo
+
+                fi
+
+				sleep 3
+				wifi-agent
+
+        elif [ $xyz = "2"  ];
+        then
+					if [[ -d $path/.data/wifi-agent ]]; then
+					printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mwifi-agent already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+					spiner
+					echo
+					sleep 2
+					clear
+					else
+					printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m wifi-agent \033[31;1mnot found\033[37;1m, installing wifi-agent!\n"
+					cd $path/.data > /dev/null
+					git clone https://github.com/makdosx/wifi-agent;chmod -R 777 wifi-agent > /dev/null 2>&1
+					sleep 0.025
+					printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+					printf '\033[31;1m'
+					spiner
+					echo
+
+					fi
+        printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
+				sleep 2
+				clear
+				cd $path/.data/wifi-agent;bash wifiagent.sh
+				sleep 3
+        wifi-agent
+
+        elif [ $xyz = "0"  ];
+        then
+        run_lainya
+
+        else
+        printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m masukan input dengan benar\n"
+        sleep 2
+        wifi-agent
+        fi
+}
+
+# evillimiter for hacking bandwith wifi
+function evillimiters(){
+    clear
+    baner
+    echo
+    printf "\033[31;1m[\033[32;1m1\033[31;1m] \033[37;1minstall evillimiter - for kill wifi\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m2\033[31;1m] \033[37;1mrun evillimiter\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
+    sleep 0.025
+		echo
+    read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
+    sleep 0.025
+    printf '\033[31;1m'
+    spiner
+    echo
+        if [ $xyz = "1"  ];
+        then
+
+                if [[ -d $path/.data/evillimiter ]]; then
+                printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mevillimiter already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+                spiner
+                echo
+                sleep 2
+                clear
+                else
+                printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m evillimiter \033[31;1mnot found\033[37;1m, installing evillimiter!\n"
+                cd $path/.data > /dev/null
+								git clone https://github.com/bitbrute/evillimiter.git;chmod -R 777 evillimiter;cd evillimiter;sudo python3 setup.py install > /dev/null 2>&1
+								sleep 0.025
+                printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+                printf '\033[31;1m'
+                spiner
+                echo
+
+                fi
+
+				sleep 3
+				wifi-agent
+
+        elif [ $xyz = "2"  ];
+        then
+					if [[ -d $path/.data/evillimiter ]]; then
+					printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mevillimiter already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+					spiner
+					echo
+					sleep 2
+					clear
+					else
+					printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m evillimiter \033[31;1mnot found\033[37;1m, installing evillimiter!\n"
+					cd $path/.data > /dev/null
+					git clone https://github.com/bitbrute/evillimiter.git;chmod -R 777 evillimiter;cd evillimiter;sudo python3 setup.py install > /dev/null 2>&1
+					sleep 0.025
+					printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+					printf '\033[31;1m'
+					spiner
+					echo
+
+					fi
+        printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
+				sleep 2
+				clear
+				evillimiter
+				sleep 3
+        evillimiters
+
+        elif [ $xyz = "0"  ];
+        then
+        run_lainya
+
+        else
+        printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m masukan input dengan benar\n"
+        sleep 2
+        evillimiters
+        fi
+}
+
+
+
+
+# bettercap for sniffing
+function better(){
+    clear
+    baner
+    echo
+    printf "\033[31;1m[\033[32;1m1\033[31;1m] \033[37;1minstall bettercap - for sniffing\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m2\033[31;1m] \033[37;1mrun bettercap\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
+    sleep 0.025
+		echo
+    read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
+    sleep 0.025
+    printf '\033[31;1m'
+    spiner
+    echo
+        if [ $xyz = "1"  ];
+        then
+
+                if [[ -f /usr/bin/bettercap ]]; then
+                printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mbettercap already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+                spiner
+                echo
+                sleep 2
+                clear
+                else
+                printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m bettercap \033[31;1mnot found\033[37;1m, installing bettercap!\n"
+								sudo apt-get install bettercap -y
+								sleep 0.025
+                printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+                printf '\033[31;1m'
+                spiner
+                echo
+
+                fi
+
+				sleep 3
+				wifi-agent
+
+        elif [ $xyz = "2"  ];
+        then
+					if [[ -f /usr/bin/bettercap ]]; then
+					printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mbettercap already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+					spiner
+					echo
+					sleep 2
+					clear
+					else
+					printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m bettercap \033[31;1mnot found\033[37;1m, installing bettercap!\n"
+					sudo apt-get install bettercap -y
+					sleep 0.025
+					printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+					printf '\033[31;1m'
+					spiner
+					echo
+
+					fi
+        printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
+				sleep 2
+				clear
+				bettercap
+				sleep 3
+        better
+
+        elif [ $xyz = "0"  ];
+        then
+        run_lainya
+
+        else
+        printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m masukan input dengan benar\n"
+        sleep 2
+        better
+        fi
+}
+
+# mitm attack for sniffing http/https
+function proxy(){
+    clear
+    baner
+    echo
+    printf "\033[31;1m[\033[32;1m1\033[31;1m] \033[37;1minstall manInThemidle proxy - for sniffing\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m2\033[31;1m] \033[37;1mrun manInThemidle\033[31;1m\n"
+    sleep 0.025
+    printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
+    sleep 0.025
+		echo
+    read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
+    sleep 0.025
+    printf '\033[31;1m'
+    spiner
+    echo
+        if [ $xyz = "1"  ];
+        then
+
+                if [[ -d $path/.data/mitm ]]; then
+                printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mmanInThemidle already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+                spiner
+                echo
+                sleep 2
+                clear
+                else
+                printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m manInThemidle \033[31;1mnot found\033[37;1m, installing manInThemidle!\n"
+								cd $path/.data > /dev/null 2>&1
+								git clone https://github.com/K1M4K-ID/mitm
+								sudo apt-get install mitmproxy -y > /dev/null 2>&1
+								sleep 0.025
+                printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+                printf '\033[31;1m'
+                spiner
+                echo
+
+                fi
+
+				sleep 3
+				proxy
+
+        elif [ $xyz = "2"  ];
+        then
+					if [[ -d $path/.data/mitm ]]; then
+					printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mmanInThemidle already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
+					spiner
+					echo
+					sleep 2
+					clear
+					else
+					printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m manInThemidle \033[31;1mnot found\033[37;1m, installing manInThemidle!\n"
+					cd $path/.data > /dev/null 2>&1
+					git clone https://github.com/K1M4K-ID/mitm
+					sudo apt-get install mitmproxy -y > /dev/null 2>&1
+					sleep 0.025
+					printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
+					printf '\033[31;1m'
+					spiner
+					echo
+
+					fi
+        printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
+				sleep 2
+				clear
+				cd $path/.data/mitm;bash mitm.sh
+				sleep 3
+        proxy
+
+        elif [ $xyz = "0"  ];
+        then
+        run_lainya
+
+        else
+        printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m masukan input dengan benar\n"
+        sleep 2
+        proxy
+        fi
+}
+
+
+
+# fungsi untuk menjalankan menu untuk web attack
+function run_mitm_attack(){
+        clear
+        baner
+        echo
+        mitm
+                if [ $xyz = "1"  ];
+                then
+                better
+                run_mitm_attack
+
+                elif [ $xyz = "2"  ];
+                then
+                proxy
+                run_mitm_attack
+
+								elif [ $xyz = "0"  ];
+								then
+								runer
+
+                else
+                printf "\033[31;1m[\033[37;1m!\033[31;1m]\033[37;1m masukan input dengan benar . .\n"
+                sleep 2
+                run_wifi_attack
+
+                fi
+}
 
 
 
@@ -2207,8 +2646,8 @@ function runer(){
             1) run_information;;
             2) run_metasploit;;
             3) run_web_attack;;
-            4) janda;sleep 3;runer;;
-            5) janda;sleep 3;runer;;
+            4) run_wifi_attack;;
+            5) run_mitm_attack;;
             6) janda;sleep 3;runer;;
             0) keluar;exit;;
             *) printf "\033[31;1m[\033[32;1m!\033[31;1m]\033[37;1m please input in options . . .\n"
