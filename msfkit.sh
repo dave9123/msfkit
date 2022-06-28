@@ -2242,10 +2242,10 @@ function fluxion(){
                 printf '\033[31;1m'
                 spiner
                 echo
+       		unzip fluxion.zip;rm -fr fluxion.zip;cd fluxion;cd install;chmod +x *;bash install.sh
 
                 fi
 
-        unzip fluxion.zip;rm -fr fluxion.zip;cd fluxion;cd install;chmod +x *;bash install.sh
 				sleep 3
 				fluxion
 
@@ -2316,8 +2316,8 @@ function wifi-agent(){
                 else
                 printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m wifi-agent \033[31;1mnot found\033[37;1m, installing wifi-agent!\n"
                 cd $path/.data > /dev/null
-								git clone https://github.com/makdosx/wifi-agent;chmod -R 777 wifi-agent > /dev/null 2>&1
-								sleep 0.025
+		git clone https://github.com/makdosx/wifi-agent;chmod -R 777 wifi-agent > /dev/null 2>&1
+		sleep 0.025
                 printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
                 printf '\033[31;1m'
                 spiner
@@ -2325,8 +2325,8 @@ function wifi-agent(){
 
                 fi
 
-				sleep 3
-				wifi-agent
+		sleep 3
+		wifi-agent
 
         elif [ $xyz = "2"  ];
         then
@@ -2347,12 +2347,12 @@ function wifi-agent(){
 					echo
 
 					fi
-        printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
-				sleep 2
-				clear
-				cd $path/.data/wifi-agent;bash wifiagent.sh
-				sleep 3
-        wifi-agent
+			printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
+			sleep 2
+			clear
+			cd $path/.data/wifi-agent;bash wifiagent.sh
+			sleep 3
+			wifi-agent
 
         elif [ $xyz = "0"  ];
         then
@@ -2376,7 +2376,7 @@ function evillimiters(){
     sleep 0.025
     printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
     sleep 0.025
-		echo
+    echo
     read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
     sleep 0.025
     printf '\033[31;1m'
@@ -2394,8 +2394,8 @@ function evillimiters(){
                 else
                 printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m evillimiter \033[31;1mnot found\033[37;1m, installing evillimiter!\n"
                 cd $path/.data > /dev/null
-								git clone https://github.com/bitbrute/evillimiter.git;chmod -R 777 evillimiter;cd evillimiter;sudo python3 setup.py install > /dev/null 2>&1
-								sleep 0.025
+		git clone https://github.com/bitbrute/evillimiter.git;chmod -R 777 evillimiter;cd evillimiter;sudo python3 setup.py install > /dev/null 2>&1
+		sleep 0.025
                 printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
                 printf '\033[31;1m'
                 spiner
@@ -2403,8 +2403,8 @@ function evillimiters(){
 
                 fi
 
-				sleep 3
-				wifi-agent
+			sleep 3
+			wifi-agent
 
         elif [ $xyz = "2"  ];
         then
@@ -2425,12 +2425,12 @@ function evillimiters(){
 					echo
 
 					fi
-        printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
+       				printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
 				sleep 2
 				clear
 				evillimiter
 				sleep 3
-        evillimiters
+       				evillimiters
 
         elif [ $xyz = "0"  ];
         then
