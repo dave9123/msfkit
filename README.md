@@ -86,7 +86,7 @@ Comming Soon
 
 ## Demonstrasi && Review
 
-<b>review :</b> <i>https://youtu.be/kUCnEV5ITHQ</i>
+<b>review :</b> <i>https://youtu.be/kUCnEV5ITHQ</i><br>
 <b>information gathering :</b> <i>https://youtu.be/NXsSsDR4Ny8</i>
 
 
