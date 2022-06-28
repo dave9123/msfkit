@@ -86,8 +86,7 @@ Comming Soon
 
 ## Demonstrasi && Review
 <b>Review :</b> <i>https://youtu.be/kUCnEV5ITHQ</i>
-
-
+<b>information gathering - full fungsi :</b> <i>https://youtu.be/NXsSsDR4Ny8</i>
 
 ## 🚀 About Me
 ```
