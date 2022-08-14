@@ -46,7 +46,7 @@ Msfkit sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sni
 
 # Screenshoot Wifi-Attack
 
-![wifi](https://user-images.githubusercontent.com/46388169/172135589-e176877a-67ed-4796-babf-a4ab13e371e8.jpg)
+
 
 # Screenshoot MITM-Attack
 
