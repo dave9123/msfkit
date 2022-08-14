@@ -44,9 +44,6 @@ Msfkit sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sni
 
 ![sql](https://user-images.githubusercontent.com/46388169/172135304-7abdf8c1-5da4-47ea-b8a0-a8cbede7d074.jpg)
 
-# Screenshoot Wifi-Attack
-
-
 
 # Screenshoot MITM-Attack
 
@@ -60,7 +57,7 @@ Msfkit sebuah tools yang di bangun, untuk melakukan sebuah pentest, exploit, sni
 1.) Information Gathering                    > tools mencari informasi
 2.) Exploit Attack Metasploit                > tools exploit, dengan metasploit-framework { create payload, embed payload, listerner }
 3.) Web Attack, XSS & SQL Injection          > tools web attack, Xss dan sql injection
-4.) Wireless Attack {New}                    > tools wifi attack, Fluxion - Wifi-Agent - Evillimiter
+4.) Wireless Attack {New}                    > tools wifi attack, Fluxion - Evillimiter
 5.) Sniffing & MITM ATTACK {New}             > tools penyadapan dan serangan ManInTheMidle Attack
 6.) Social Enggineering {SOON}               > tools rekayasa sosial  
 ```
