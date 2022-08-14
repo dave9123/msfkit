@@ -345,9 +345,7 @@ function web_attack(){
 function sadap(){
         printf "\033[31;1m[\033[32;1m1\033[31;1m]\033[37;1m fluxion (hacking wifi with captive portal - fake ssid)\033[31;1m\n"
         sleep 0.025
-        printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m wifi-agent (fake wifi - for hacking account sosial media)\033[31;1m\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m3\033[31;1m]\033[37;1m evillimiter (hacking wifi - kill wifi)\033[31;1m\n"
+        printf "\033[31;1m[\033[32;1m2\033[31;1m]\033[37;1m evillimiter (hacking wifi - kill wifi)\033[31;1m\n"
         sleep 0.025
 				printf "\033[31;1m[\033[32;1m0\033[31;1m]\033[37;1m kembali\033[31;1m\n\n"
         sleep 0.025
@@ -371,42 +369,7 @@ function mitm(){
 }
 
 
-# user pilih menu lainya
-function others(){
-    clear
-    baner
-    echo
-    echo
-        printf "\033[31;1m[\033[32;1m01\033[31;1m] \033[37;1mmedia downloader, mp3,mp4 [\033[32;1minstagram, youtube, facebook\033[37;1m]\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m02\033[31;1m] \033[37;1madbsploit hacking\033[31;1m\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m03\033[31;1m] \033[37;1mphising scam page sosial media\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m04\033[31;1m] \033[37;1msocial enggineering, osint device & keyloager for\033[31;1m android\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m05\033[31;1m] \033[37;1mosint tools instagram recon\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m06\033[31;1m] \033[37;1mshortlink url\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m07\033[31;1m] \033[37;1mremove log\033[31;1m (\033[32;1mtools menghilangkan jejak\033[31;1m)\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m08\033[31;1m] \033[37;1mwebcam shoot, saycheese\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m09\033[31;1m] \033[37;1mxss scanning\033[31;1m (\033[32;1mXSS\033[31;1m)\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m10\033[31;1m] \033[37;1msql injection\033[31;1m (\033[32;1mSQLI\033[31;1m)\n"
-        sleep 0.025
-        printf "\033[31;1m[\033[32;1m00\033[31;1m] \033[37;1mkembali\n"
-        sleep 0.025
-        printf "\n"
-        read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
-        sleep 0.025
-        printf '\033[31;1m'
-        spiner
-        echo
 
-}
 
 janda(){
 printf '\033[31;1m'"""
@@ -2261,6 +2224,7 @@ function fluxion(){
 					printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m fluxion \033[31;1mnot found\033[37;1m, installing fluxion!\n"
 					cd $path/.data > /dev/null
 					git clone https://github.com/K1M4K-ID/fluxion > /dev/null 2>&1
+					sleep 1
 					unzip fluxion.zip;rm -fr fluxion.zip;cd fluxion;cd install;chmod +x *;bash install.sh
 					sleep 0.025
 					printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
@@ -2287,83 +2251,6 @@ function fluxion(){
         fi
 }
 
-# wifi agent for hacking wifi with captive portal
-function wifi-agent(){
-    clear
-    baner
-    echo
-    printf "\033[31;1m[\033[32;1m1\033[31;1m] \033[37;1minstall wifi-agent - for hacking account\033[31;1m\n"
-    sleep 0.025
-    printf "\033[31;1m[\033[32;1m2\033[31;1m] \033[37;1mrun wifi-agent\033[31;1m\n"
-    sleep 0.025
-    printf "\033[31;1m[\033[32;1m0\033[31;1m] \033[37;1mkembali\033[31;1m\n"
-    sleep 0.025
-		echo
-    read -p "$(printf "\033[31;1m[\033[32;1m*\033[31;1m] choice : "'\033[34;1m')" xyz
-    sleep 0.025
-    printf '\033[31;1m'
-    spiner
-    echo
-        if [ $xyz = "1"  ];
-        then
-
-                if [[ -d $path/.data/wifi-agent ]]; then
-                printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mwifi-agent already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
-                spiner
-                echo
-                sleep 2
-                clear
-                else
-                printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m wifi-agent \033[31;1mnot found\033[37;1m, installing wifi-agent!\n"
-                cd $path/.data > /dev/null
-		git clone https://github.com/makdosx/wifi-agent;chmod -R 777 wifi-agent > /dev/null 2>&1
-		sleep 0.025
-                printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
-                printf '\033[31;1m'
-                spiner
-                echo
-
-                fi
-
-		sleep 3
-		wifi-agent
-
-        elif [ $xyz = "2"  ];
-        then
-					if [[ -d $path/.data/wifi-agent ]]; then
-					printf "\033[31;1m[\033[32;1m✔\033[31;1m] \033[37;1mwifi-agent already installed\033[31;1m [\033[32;1mOK\033[31;1m]\n"
-					spiner
-					echo
-					sleep 2
-					clear
-					else
-					printf "\033[37;1m[\033[31;1mX\033[37;1m]\033[37;1m wifi-agent \033[31;1mnot found\033[37;1m, installing wifi-agent!\n"
-					cd $path/.data > /dev/null
-					git clone https://github.com/makdosx/wifi-agent;chmod -R 777 wifi-agent > /dev/null 2>&1
-					sleep 0.025
-					printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m installing\033[32;1m succesfully\033[31;1m\n"
-					printf '\033[31;1m'
-					spiner
-					echo
-
-					fi
-			printf "\033[31;1m[\033[32;1m*\033[31;1m]\033[37;1m starting . . .\n"
-			sleep 2
-			clear
-			cd $path/.data/wifi-agent;bash wifiagent.sh
-			sleep 3
-			wifi-agent
-
-        elif [ $xyz = "0"  ];
-        then
-        run_lainya
-
-        else
-        printf "\033[37;1m[\033[31;1m!\033[37;1m]\033[37;1m masukan input dengan benar\n"
-        sleep 2
-        wifi-agent
-        fi
-}
 
 # evillimiter for hacking bandwith wifi
 function evillimiters(){
@@ -2454,19 +2341,14 @@ function run_wifi_attack(){
                 fluxion
                 run_wifi_attack
 
-                elif [ $xyz = "2"  ];
-                then
-                wifi-agent
-                run_wifi_attack
+		elif [ $xyz = "2"  ];
+		then
+		evillimiters
+		run_wifi_attack
 
-								elif [ $xyz = "3"  ];
-								then
-								evillimiters
-								run_wifi_attack
-
-								elif [ $xyz = "0"  ];
-								then
-								runer
+		elif [ $xyz = "0"  ];
+		then
+		runer
 
                 else
                 printf "\033[31;1m[\033[37;1m!\033[31;1m]\033[37;1m masukan input dengan benar . .\n"
